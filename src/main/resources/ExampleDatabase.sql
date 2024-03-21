@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS GitPubDatabase;
+
+USE GitPubDatabase;
+
+CREATE TABLE IF NOT EXISTS Pubs (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    pubName VARCHAR(50) NOT NULL,
+    Menu VARCHAR(50) NOT NULL,
+    Reviews VARCHAR(50) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS Area (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    shopStreet VARCHAR(50) NOT NULL,
+    eyreSquare VARCHAR(50) NOT NULL,
+    other VARCHAR(50) Not NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);

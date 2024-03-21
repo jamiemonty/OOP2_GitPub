@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ie.atu</groupId>
-    <artifactId>PubPrices_Project</artifactId>
+    <artifactId>GitPub</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
