@@ -7,9 +7,9 @@ import java.sql.Statement;
 
 public class SelectPub {
     public static void main(String[] args) {
-        String selectSQL = "SELECT u.username, u.password, e.email " +
-                "FROM users u " +
-                "JOIN emails e ON u.id = e.user_id";
+        String selectSQL = "SELECT u.eyreSq, u.latinQuarter, u.westEnd ";
+                /*"FROM users u " +
+                "JOIN emails e ON u.id = e.user_id";*/
 
         try (Connection connection = DatabaseUtils.getConnection();
              Statement statement = connection.createStatement();
