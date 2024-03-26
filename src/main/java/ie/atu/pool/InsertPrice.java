@@ -1,4 +1,4 @@
-package ie.atu.standard;
+package ie.atu.pool;
 
 import java.sql.*;
 public class InsertPrice {

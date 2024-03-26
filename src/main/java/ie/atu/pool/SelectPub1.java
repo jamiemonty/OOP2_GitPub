@@ -1,7 +1,7 @@
-package ie.atu.standard;
+package ie.atu.pool;
 
 import java.sql.*;
-public class SelectPub {
+public class SelectPub1 {
     public static void main(String[] args) {
         // MySQL database connection details
         String url = "jdbc:mysql://localhost:3306/exampledatabase";
