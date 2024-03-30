@@ -6,8 +6,14 @@ import java.util.Scanner;
 
 public class pubOverview extends pubSelect{
 
-    public pubOverview(String[] drinks,double[] prices){
+    public pubOverview(String[] drinks, double[] prices, String[] reviewCat, double[] rating){
         super(drinks, prices);
+        this.reviewCat = reviewCat;
+        this.rating = rating;
+    }
+
+    public pubOverview(String[] reviewCat, double[] rating){
+       super(reviewCat, rating);
     }
 
     public void displaydrinkinfo(){
@@ -105,6 +111,13 @@ public class pubOverview extends pubSelect{
                 break;
             case 2:
                 System.out.println("Pub Reviews\n");
+                String[] reviewCat = {"Cleanliness", "Friendliness", "Accessibility", "Uniqueness", "Range", "-Average"};
+                double[] rating = {7, 8, 10, 7, 6, 7.6};
+
+                System.out.println("Ratings and Reviews: ");
+                for(int i = 0; i < reviewCat.length; i++){
+                    System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
+                }
                 break;
 
             case 3:
@@ -116,3 +129,4 @@ public class pubOverview extends pubSelect{
         }
     }
 }
+
