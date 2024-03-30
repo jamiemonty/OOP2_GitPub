@@ -11,7 +11,6 @@ public class pubOverview extends pubSelect{
         this.reviewCat = reviewCat;
         this.rating = rating;
     }
-
     public pubOverview(String[] reviewCat, double[] rating){
        super(reviewCat, rating);
     }
@@ -20,6 +19,13 @@ public class pubOverview extends pubSelect{
        displayinfo();
     }
 
+    public static double calcAverage(double[] rating) {
+        int totalSum = 0;
+        for(double num : rating){
+            totalSum += num;
+        }
+        return(double) totalSum/rating.length;
+    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n\nWelcome to the Pub Overview\n\n");
@@ -103,21 +109,22 @@ public class pubOverview extends pubSelect{
         switch (select){
             case 1:
                 System.out.println("Pub Prices\n");
-                String[] drinks = {"Guinness", "Heineken"};
-                double[] prices = {5.50, 6};
+                String[] drinks = {"Guinness ", "Heineken ", "Orchard Thieves ", "\nVodka "};
+                double[] prices = {5.50, 6, 6.2, 6};
 
                 pubOverview pubOverview = new pubOverview(drinks, prices);
                 pubOverview.displaydrinkinfo();
                 break;
             case 2:
                 System.out.println("Pub Reviews\n");
-                String[] reviewCat = {"Cleanliness", "Friendliness", "Accessibility", "Uniqueness", "Range", "-Average"};
-                double[] rating = {7, 8, 10, 7, 6, 7.6};
-
+                String[] reviewCat = {"Cleanliness", "Friendliness", "Accessibility", "Uniqueness", "Range"};
+                double[] rating = {7, 8, 10, 7, 6};
+                double average = calcAverage(rating);
                 System.out.println("Ratings and Reviews: ");
                 for(int i = 0; i < reviewCat.length; i++){
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
+                System.out.println("-Score: " + average);
                 break;
 
             case 3:
