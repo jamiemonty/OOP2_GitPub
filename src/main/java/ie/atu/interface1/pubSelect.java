@@ -19,8 +19,8 @@ public class pubSelect {
    // }
     public void displayinfo() {
         System.out.println("Drink Menu + Prices: ");
-        for (int i = 0; i <= drinks.length; i++) {
-            System.out.println(drinks[i] + ": €" + prices[i]);
+        for (int i = 0; i < drinks.length; i++) {
+            System.out.println(drinks[i] + "- €" + prices[i]);
         }
     }
    // public void displayReviewInfo(){
