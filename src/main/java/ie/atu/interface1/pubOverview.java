@@ -6,6 +6,14 @@ import java.util.Scanner;
 
 public class pubOverview extends pubSelect{
 
+    public pubOverview(String[] drinks,double[] prices){
+        super(drinks, prices);
+    }
+
+    public void displaydrinkinfo(){
+       displayinfo();
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n\nWelcome to the Pub Overview\n\n");
@@ -89,6 +97,11 @@ public class pubOverview extends pubSelect{
         switch (select){
             case 1:
                 System.out.println("Pub Prices\n");
+                String[] drinks = {"Guinness", "Heineken"};
+                double[] prices = {5.50, 6};
+
+                pubOverview pubOverview = new pubOverview(drinks, prices);
+                pubOverview.displaydrinkinfo();
                 break;
             case 2:
                 System.out.println("Pub Reviews\n");
