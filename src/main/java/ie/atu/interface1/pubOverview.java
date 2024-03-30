@@ -26,12 +26,12 @@ public class pubOverview extends pubSelect{
         }
         return(double) totalSum/rating.length;
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n\nWelcome to the Pub Overview\n\n");
         int overview = scanner.nextInt();
         int select = scanner.nextInt();
-
 
 
         switch (overview) {
@@ -56,6 +56,7 @@ public class pubOverview extends pubSelect{
             case 4:
                 System.out.println("\n\n4.  You have chosen Darcy's\nOverview\nDarcy's is a Traditional Irish bar located on " +
                         "Eyre Square in the heart of Galway city, just beside the train station");
+
                 break;
 
             case 5:
@@ -104,7 +105,7 @@ public class pubOverview extends pubSelect{
 
         }
 
-        System.out.println("1. Pub Price\t 2. Pub Reviews\t 3. Pub Details\n :");
+       System.out.println("1. Pub Price\t 2. Pub Reviews\t 3. Pub Details\n :");
 
         switch (select){
             case 1:
@@ -125,6 +126,8 @@ public class pubOverview extends pubSelect{
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
+                pubSelect review1 = new pubSelect(".");
+                review1.reviewDarcys();
                 break;
 
             case 3:
