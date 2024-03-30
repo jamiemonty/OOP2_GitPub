@@ -7,6 +7,8 @@ public class pubSelect {
     public double[] rating;
     private String darcys;
 
+    private String BarrNaCh;
+
 
     public pubSelect(String[] drinks, double[] prices){
         this.drinks = drinks;
@@ -42,11 +44,23 @@ public class pubSelect {
                 "Date of visit: August 2023\n\n"
                 + darcys);
     }
-   // public void displayReviewInfo(){
-    //    System.out.println("Ratings and Reviews: ");
-    //    for(int i = 0; i <= reviewCat.length; i++){
-    //        System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
-      //  }
-   // }
+
+    public void BarrNaCh(){
+        System.out.println("\nReviews:\n\nBrilliant pub ,live music seven nights a week \n" +
+                "and owner Michael a gent and a character good upstairs \n" +
+                "in mama rich a lovely experience make sure to book\n" +
+                "Date of visit: February 2024\n.\n" +
+                "Great place for a night out or a drink before dinner. \n" +
+                "Was lucky to get the snug next to the bar last time and spent a few hours with friends.\n" +
+                "Date of visit: November 2023\n.\n" +
+                "Monty! Where can I start? The best bartender out there. \n" +
+                "Remembers all of our names. Remembers all of our orders.\n" +
+                " Just made our night! Give this guy a raise asap!\n" +
+                "Date of visit: August 2022\n\n"
+        /*+ BarrNaChalladh*/);
+    }
+
+
+
 
 }
