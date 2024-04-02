@@ -30,10 +30,13 @@ public class pubOverview extends pubSelect{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n\nWelcome to the Pub Overview\n\n");
-        int overview = scanner.nextInt();
+        System.out.println("Please enter the number which corresponds to the pub you would like to explore!\n\n");
+        System.out.println("1. Barr an Chaladh\t\t2. Blue Note\n3. Buskers\t\t\t\t4. Darcy's\n5. Mary Mullens\t\t\t6. Massimos\n7. McGettigan's\t\t\t8. Monroes\n9. Roisin Dubh\t\t\t10. Skeff\n11. Taaffes\t\t\t\t12. Taylor's ");
+        System.out.println("Pub number: ");
+
         int select = scanner.nextInt();
 
-
+        int overview = scanner.nextInt();
         switch (overview) {
 
             case 1:
