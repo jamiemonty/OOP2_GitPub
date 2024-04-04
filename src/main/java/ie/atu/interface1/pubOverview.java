@@ -29,7 +29,7 @@ public class pubOverview extends pubSelect {
 
     public static void maryMullinsPD(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+        System.out.println("\n1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
 
         int select = scanner.nextInt();
 
@@ -66,7 +66,7 @@ public class pubOverview extends pubSelect {
 
     public static void mcGettiganPD(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+        System.out.println("\n1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
 
         int select = scanner.nextInt();
 
@@ -102,7 +102,7 @@ public class pubOverview extends pubSelect {
     }
     public static void skeffPD() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+        System.out.println("\n1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
 
         int select = scanner.nextInt();
 
@@ -139,7 +139,7 @@ public class pubOverview extends pubSelect {
 
     public static void darcysPD(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+        System.out.println("\n1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
 
         int select = scanner.nextInt();
 
@@ -173,7 +173,303 @@ public class pubOverview extends pubSelect {
                 System.out.println("Invalid choice.");
         }
     }
+
+    public static void barrNaChPD(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\n1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+
+        int select = scanner.nextInt();
+
+        switch (select) {
+            case 1:
+                System.out.println("Pub Prices\n");
+                double[] prices = {5.50, 6.00, 6.20, 6.00, 6.00, 6.00, 6.00, 1.50, 2.80, 2.40, 6.00, 6.00, 6.00, 6.50, 0, 0, 0, 0, 0 };
+
+                pubSelect pub= new pubSelect(prices);
+                pub.displayinfo();
+                break;
+            case 2:
+                System.out.println("Pub Reviews\n");
+                String[] reviewCat = {"Cleanliness", "Friendliness", "Accessibility", "Uniqueness", "Range"};
+                double[] rating = {6, 8, 8, 7, 6};
+                double average = calcAverage(rating);
+                System.out.println("Ratings and Reviews: ");
+                for (int i = 0; i < reviewCat.length; i++) {
+                    System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
+                }
+                System.out.println("-Score: " + average);
+                //pubSelect review1 = new pubSelect(".");
+                //review1.reviewDarcys();
+                break;
+
+            case 3:
+                System.out.println("Pub Details\n");
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+        }
     }
+
+    public static void buskersPD(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\n1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+
+        int select = scanner.nextInt();
+
+        switch (select) {
+            case 1:
+                System.out.println("Pub Prices\n");
+                double[] prices = {5.95, 6.50, 6.50, 6.00, 6.00, 6.00, 6.00, 1.25, 3.00, 2.40, 6.00, 6.00, 6.00, 6.00, 12.50, 12.00, 12.50, 12.50, 12.00};
+
+                pubSelect pub= new pubSelect(prices);
+                pub.displayinfo();
+                break;
+            case 2:
+                System.out.println("Pub Reviews\n");
+                String[] reviewCat = {"Cleanliness", "Friendliness", "Accessibility", "Uniqueness", "Range"};
+                double[] rating = {6, 6, 7, 5, 9};
+                double average = calcAverage(rating);
+                System.out.println("Ratings and Reviews: ");
+                for (int i = 0; i < reviewCat.length; i++) {
+                    System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
+                }
+                System.out.println("-Score: " + average);
+                //pubSelect review1 = new pubSelect(".");
+                //review1.reviewMaryMullins();
+                break;
+
+            case 3:
+                System.out.println("Pub Details\n");
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+        }
+    }
+
+    public static void blueNotePD(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\n1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+
+        int select = scanner.nextInt();
+
+        switch (select) {
+            case 1:
+                System.out.println("Pub Prices\n");
+                double[] prices = {5.80, 6.40, 6.50, 6.20, 6.20, 6.20, 6.20, 1.00, 3.00, 2.80, 6.20, 6.20, 6.20, 6.20, 12.50, 12.50, 12.00, 12.00, 12.75};
+
+                pubSelect pub= new pubSelect(prices);
+                pub.displayinfo();
+                break;
+            case 2:
+                System.out.println("Pub Reviews\n");
+                String[] reviewCat = {"Cleanliness", "Friendliness", "Accessibility", "Uniqueness", "Range"};
+                double[] rating = {8, 8, 6, 9, 7};
+                double average = calcAverage(rating);
+                System.out.println("Ratings and Reviews: ");
+                for (int i = 0; i < reviewCat.length; i++) {
+                    System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
+                }
+                System.out.println("-Score: " + average);
+                //pubSelect review1 = new pubSelect(".");
+                //review1.reviewMaryMullins();
+                break;
+
+            case 3:
+                System.out.println("Pub Details\n");
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+        }
+    }
+
+    public static void massimosPD(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\n1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+
+        int select = scanner.nextInt();
+
+        switch (select) {
+            case 1:
+                System.out.println("Pub Prices\n");
+                double[] prices = {5.20, 5.90, 6.20, 6.00, 6.00, 6.00, 6.00, 1.20, 3.00, 2.20, 5.70, 5.70, 5.70, 5.70, 13.00, 13.00, 0, 12.50, 12.50};
+
+                pubSelect pub= new pubSelect(prices);
+                pub.displayinfo();
+                break;
+            case 2:
+                System.out.println("Pub Reviews\n");
+                String[] reviewCat = {"Cleanliness", "Friendliness", "Accessibility", "Uniqueness", "Range"};
+                double[] rating = {7, 8, 5, 6, 8};
+                double average = calcAverage(rating);
+                System.out.println("Ratings and Reviews: ");
+                for (int i = 0; i < reviewCat.length; i++) {
+                    System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
+                }
+                System.out.println("-Score: " + average);
+                //pubSelect review1 = new pubSelect(".");
+                //review1.reviewMaryMullins();
+                break;
+
+            case 3:
+                System.out.println("Pub Details\n");
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+        }
+    }
+
+    public static void monroesPD(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\n1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+
+        int select = scanner.nextInt();
+
+        switch (select) {
+            case 1:
+                System.out.println("Pub Prices\n");
+                double[] prices = {5.20, 6.50, 6.80, 6.50, 7.00, 5.50, 5.50, 1.20, 2.80, 2.30, 4.80, 5.00, 5.10, 5.40, 11.90, 13.80, 12.00, 12.80, 12.30};
+
+                pubSelect pub= new pubSelect(prices);
+                pub.displayinfo();
+                break;
+            case 2:
+                System.out.println("Pub Reviews\n");
+                String[] reviewCat = {"Cleanliness", "Friendliness", "Accessibility", "Uniqueness", "Range"};
+                double[] rating = {8, 5, 6, 6, 6};
+                double average = calcAverage(rating);
+                System.out.println("Ratings and Reviews: ");
+                for (int i = 0; i < reviewCat.length; i++) {
+                    System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
+                }
+                System.out.println("-Score: " + average);
+                //pubSelect review1 = new pubSelect(".");
+                //review1.reviewMaryMullins();
+                break;
+
+            case 3:
+                System.out.println("Pub Details\n");
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+        }
+    }
+
+    public static void roisinDubhPD(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\n1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+
+        int select = scanner.nextInt();
+
+        switch (select) {
+            case 1:
+                System.out.println("Pub Prices\n");
+                double[] prices = {5.50, 6.60, 6.60, 6.00, 6.30, 5.40, 4.50, 0.50, 3.20, 2.90, 5.80, 6.00, 5.50, 5.50, 12.50, 12.90, 13.00, 14.20, 13.00};
+
+                pubSelect pub= new pubSelect(prices);
+                pub.displayinfo();
+                break;
+            case 2:
+                System.out.println("Pub Reviews\n");
+                String[] reviewCat = {"Cleanliness", "Friendliness", "Accessibility", "Uniqueness", "Range"};
+                double[] rating = {1, 3, 6, 8, 5};
+                double average = calcAverage(rating);
+                System.out.println("Ratings and Reviews: ");
+                for (int i = 0; i < reviewCat.length; i++) {
+                    System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
+                }
+                System.out.println("-Score: " + average);
+                //pubSelect review1 = new pubSelect(".");
+                //review1.reviewMaryMullins();
+                break;
+
+            case 3:
+                System.out.println("Pub Details\n");
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+        }
+    }
+
+    public static void taylorsPD(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\n1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+
+        int select = scanner.nextInt();
+
+        switch (select) {
+            case 1:
+                System.out.println("Pub Prices\n");
+                double[] prices = {5.60, 6.00, 6.50, 6.20, 6.00, 5.80, 5.00, 0, 2.40, 2.60, 6.00, 6.00, 6.00, 0, 15.00, 12.00, 12.50, 12.00, 12.00};
+
+                pubSelect pub= new pubSelect(prices);
+                pub.displayinfo();
+                break;
+            case 2:
+                System.out.println("Pub Reviews\n");
+                String[] reviewCat = {"Cleanliness", "Friendliness", "Accessibility", "Uniqueness", "Range"};
+                double[] rating = {9, 10, 8, 8, 9};
+                double average = calcAverage(rating);
+                System.out.println("Ratings and Reviews: ");
+                for (int i = 0; i < reviewCat.length; i++) {
+                    System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
+                }
+                System.out.println("-Score: " + average);
+                //pubSelect review1 = new pubSelect(".");
+                //review1.reviewMaryMullins();
+                break;
+
+            case 3:
+                System.out.println("Pub Details\n");
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+        }
+    }
+
+    public static void taaffesPD(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\n1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+
+        int select = scanner.nextInt();
+
+        switch (select) {
+            case 1:
+                System.out.println("Pub Prices\n");
+                double[] prices = {5.40, 6.20, 5.80, 6.00, 4.50, 6.00, 6.30, 1.00, 2.80, 2.50, 6.00, 5.60, 5.70, 5.40, 12.00, 13.00, 12.80, 13.20, 13.00};
+
+                pubSelect pub= new pubSelect(prices);
+                pub.displayinfo();
+                break;
+            case 2:
+                System.out.println("Pub Reviews\n");
+                String[] reviewCat = {"Cleanliness", "Friendliness", "Accessibility", "Uniqueness", "Range"};
+                double[] rating = {9, 10, 8, 8, 9};
+                double average = calcAverage(rating);
+                System.out.println("Ratings and Reviews: ");
+                for (int i = 0; i < reviewCat.length; i++) {
+                    System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
+                }
+                System.out.println("-Score: " + average);
+                //pubSelect review1 = new pubSelect(".");
+                //review1.reviewMaryMullins();
+                break;
+
+            case 3:
+                System.out.println("Pub Details\n");
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+        }
+    }
+}
 
 
 
