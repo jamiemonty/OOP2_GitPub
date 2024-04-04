@@ -6,15 +6,14 @@ import java.util.Scanner;
 
 public class pubOverview extends pubSelect {
 
-    public pubOverview(String[] drinks, double[] prices, String[] reviewCat, double[] rating) {
-        super(drinks, prices);
+    public pubOverview(/*String[] drinks,*/ double[] prices, String[] reviewCat, double[] rating) {
+        super(prices);
         this.reviewCat = reviewCat;
         this.rating = rating;
     }
-
-    public pubOverview(String[] reviewCat, double[] rating) {
+    /*public pubOverview(String[] reviewCat, double[] rating) {
         super(reviewCat, rating);
-    }
+    }*/
 
     public void displaydrinkinfo() {
         displayinfo();
@@ -28,186 +27,129 @@ public class pubOverview extends pubSelect {
         return (double) totalSum / rating.length;
     }
 
-    public static void displayPubsEyreSq() {
+    public static void maryMullinsPD(){
         Scanner scanner = new Scanner(System.in);
-        //System.out.println("\n\nWelcome to the Pub Overview\n\n");
-        System.out.println("Please enter the number which corresponds to the pub you would like to explore!\n");
-        System.out.println("1. Mary Mullins\t\t2. McGettigan's\n3. Skeff\t\t4. Darcy's");
-        //System.out.println("1. Barr an Chaladh\t\t2. Blue Note\n3. Buskers\t\t\t\t4. Darcy's\n5. Mary Mullens\t\t\t6. Massimos\n7. McGettigan's\t\t\t8. Monroes\n9. Roisin Dubh\t\t\t10. Skeff\n11. Taaffes\t\t\t\t12. Taylor's ");
-        System.out.println("Pub number: ");
-
-        int EyreSqoverview = scanner.nextInt();
-        switch (EyreSqoverview) {
-
-            case 1:
-                System.out.println("\n\n1.  You have chosen Mary Mullens\nOverview\nLocated 300 yards from the train" +
-                        "station, Mullens has quickly transformed into one of the most popular pubs in the city");
-                break;
-            case 2:
-                System.out.println("\n\n2.  You have chosen McGettigan's\nOverview\nMcGettigan's GWY is located on Eyre Square" +
-                        " in Galway. Pop in and try award-winning pub grub, " +
-                        "watch live sports, or enjoy live music! ");
-                break;
-            case 3:
-                System.out.println("\n\n3. You have chosen Skeff\nOverview\nUniquely designed busy bar in the heart of Galway " +
-                        "city center serving wholesome, quality food.");
-                break;
-            case 4:
-                System.out.println("\n\n4.  You have chosen Darcy's\nOverview\nDarcy's is a Traditional Irish bar located on " +
-                        "Eyre Square in the heart of Galway city, just beside the train station");
-                break;
-            default:
-                System.out.println("Invalid choice.");
-        }
-    }
-
-    public static void displayPubsShopSt(){
-        Scanner scanner = new Scanner(System.in);
-        //System.out.println("\n\nWelcome to the Pub Overview\n\n");
-        System.out.println("Please enter the number which corresponds to the pub you would like to explore!\n");
-        System.out.println("1. Barr an Chaladh\t\t2. Busker Brownes\t\t3. Taffees");
-        //System.out.println("1. Barr an Chaladh\t\t2. Blue Note\n3. Buskers\t\t\t\t4. Darcy's\n5. Mary Mullens\t\t\t6. Massimos\n7. McGettigan's\t\t\t8. Monroes\n9. Roisin Dubh\t\t\t10. Skeff\n11. Taaffes\t\t\t\t12. Taylor's ");
-        System.out.println("Pub number: ");
-
-        int ShopStoverview = scanner.nextInt();
-        switch (ShopStoverview) {
-            case 1:
-                System.out.println("\n\n1.  You have chosen Barr an Chaladh\nOverview\nA country " +
-                        "pub in the heart of the city, " +
-                        "Barr an Chaladh is just a stone's throw from Eyre Square and " +
-                        "features traditional music performances seven nights a week.");
-                break;
-            case 2:
-                System.out.println("\n\n2.  You have chosen Buskers\nOverview\nFunky cafe, bar and restaurant with ancient " +
-                        "stonework and modern art, serving an international menu");
-                break;
-            case 3:
-                System.out.println("\n\n3. You have chosen Taaffes\nOverview\nFantastic traditional Irish bar with great pints" +
-                        " of Guinness! Really good location and the staff are all very friendly too");
-                break;
-            default:
-                System.out.println("Invalid choice.");
-
-        }
-
-    }
-    public static void displayPubsLatinQ(){
-        Scanner scanner = new Scanner(System.in);
-        //System.out.println("\n\nWelcome to the Pub Overview\n\n");
-        System.out.println("Please enter the number which corresponds to the pub you would like to explore!\n");
-        System.out.println("1. Blue Note\t\t2. Massimo's\n3. Monroe's\t\t4.Roisin Dubh\n5. Taylor's");
-        //System.out.println("1. Barr an Chaladh\t\t2. Blue Note\n3. Buskers\t\t\t\t4. Darcy's\n5. Mary Mullens\t\t\t6. Massimos\n7. McGettigan's\t\t\t8. Monroes\n9. Roisin Dubh\t\t\t10. Skeff\n11. Taaffes\t\t\t\t12. Taylor's ");
-        System.out.println("Pub number: ");
-
-        int LatinQoverview = scanner.nextInt();
-        switch (LatinQoverview) {
-            case 1:
-                System.out.println("\n\n1.  You have chosen Blue note\nOverview\nHas outdoor seating, " +
-                        "Serves great cocktails Doesn't accept reservations");
-                break;
-            case 2:
-                System.out.println("\n\n2.  You have chosen Massimos\nOverview\nCocktails, beer & dancing in a long-running " +
-                        "neighbourhood bar that has a covered patio.");
-                break;
-            case 3:
-                System.out.println("\n\n3.  You have chosen Monroes\nOverview\nMonroe's Tavern is renowned for it's friendly " +
-                        "staff, warm atmosphere and live music.");
-                break;
-            case 4:
-                System.out.println("\n\n4.  You have chosen Roisin Dubh\nOverview\nBar and club with two separate stages " +
-                        "showcasing local and international live music and comedy acts.");
-                break;
-            case 5:
-                System.out.println("\n\n12. You have chosen Taylor's\nOverview\nAuthentic and award-winning Irish Whiskey Bar " +
-                        "with a long history, dating back to the early 19th Century.");
-                break;
-            default:
-                System.out.println("Invalid choice.");
-        }
-
-    }
-            /*case 1:
-                System.out.println("\n\n1.  You have chosen Barr an Chaladh\nOverview\nA country " +
-                        "pub in the heart of the city, " +
-                        "Barr an Chaladh is just a stone's throw from Eyre Square and " +
-                        "features traditional music performances seven nights a week.");
-                break;
-
-            case 2:
-                System.out.println("\n\n2.  You have chosen Blue note\nOverview\nHas outdoor seating, " +
-                        "Serves great cocktails Doesn't accept reservations");
-                break;
-
-            case 3:
-                System.out.println("\n\n3.  You have chosen Buskers\nOverview\nFunky cafe, bar and restaurant with ancient " +
-                        "stonework and modern art, serving an international menu");
-                break;
-
-            case 4:
-                System.out.println("\n\n4.  You have chosen Darcy's\nOverview\nDarcy's is a Traditional Irish bar located on " +
-                        "Eyre Square in the heart of Galway city, just beside the train station");
-
-                break;
-
-            case 5:
-                System.out.println("\n\n5.  You have chosen Mary Mullens\nOverview\nLocated 300 yards from the train" +
-                        "station, Mullens has quickly transformed into one of the most popular pubs in the city");
-                break;
-
-            case 6:
-                System.out.println("\n\n6.  You have chosen Massimos\nOverview\nCocktails, beer & dancing in a long-running " +
-                        "neighbourhood bar that has a covered patio.");
-                break;
-
-            case 7:
-                System.out.println("\n\n7.  You have chosen McGettigan's\nOverview\nMcGettigan's GWY is located on Eyre Square" +
-                        " in Galway. Pop in and try award-winning pub grub, " +
-                        "watch live sports, or enjoy live music! ");
-                break;
-
-            case 8:
-                System.out.println("\n\n8.  You have chosen Monroes\nOverview\nMonroe's Tavern is renowned for it's friendly " +
-                        "staff, warm atmosphere and live music.");
-                break;
-
-            case 9:
-                System.out.println("\n\n9.  You have chosen Roisin Dubh\nOverview\nBar and club with two separate stages " +
-                        "showcasing local and international live music and comedy acts.");
-                break;
-
-            case 10:
-                System.out.println("\n\n10. You have chosen Skeff\nOverview\nUniquely designed busy bar in the heart of Galway " +
-                        "city center serving wholesome, quality food.");
-                break;
-
-            case 11:
-                System.out.println("\n\n11. You have chosen Taaffes\nOverview\nFantastic traditional Irish bar with great pints" +
-                        " of Guinness! Really good location and the staff are all very friendly too");
-                break;
-
-            case 12:
-                System.out.println("\n\n12. You have chosen Taylor's\nOverview\nAuthentic and award-winning Irish Whiskey Bar " +
-                        "with a long history, dating back to the early 19th Century.");
-                break;
-
-            default:
-                System.out.println("Invalid choice.");
-*/
-
-    public static void pubDetails() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("1. Pub Price\t 2. Pub Reviews\t 3. Pub Details\n :");
+        System.out.println("1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
 
         int select = scanner.nextInt();
 
         switch (select) {
             case 1:
                 System.out.println("Pub Prices\n");
-                String[] drinks = {"Guinness ", "Heineken ", "Orchard Thieves ", "\nVodka "};
-                double[] prices = {5.50, 6, 6.2, 6};
+                double[] prices = {5.70, 6.70, 6.30, 6.50, 6.80, 4.50, 6.00, 1.00, 3.00, 2.50, 5.50, 5.50, 6.00, 6.20, 11.50, 13.00, 13.60, 13.00, 11.90};
 
-                pubOverview pubOverview = new pubOverview(drinks, prices);
-                pubOverview.displaydrinkinfo();
+                pubSelect pub= new pubSelect(prices);
+                pub.displayinfo();
+                break;
+            case 2:
+                System.out.println("Pub Reviews\n");
+                String[] reviewCat = {"Cleanliness", "Friendliness", "Accessibility", "Uniqueness", "Range"};
+                double[] rating = {10, 7, 10, 10, 7};
+                double average = calcAverage(rating);
+                System.out.println("Ratings and Reviews: ");
+                for (int i = 0; i < reviewCat.length; i++) {
+                    System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
+                }
+                System.out.println("-Score: " + average);
+                //pubSelect review1 = new pubSelect(".");
+                //review1.reviewMaryMullins();
+                break;
+
+            case 3:
+                System.out.println("Pub Details\n");
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+        }
+    }
+
+    public static void mcGettiganPD(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+
+        int select = scanner.nextInt();
+
+        switch (select) {
+            case 1:
+                System.out.println("Pub Prices\n");
+                double[] prices = {5.40, 5.80, 5.80, 5.20, 5.50, 4.70, 5.00, 0.50, 3.00, 2.50, 5.80, 5.80, 5.20, 5.30, 12.00, 12.50, 12.50, 12.50, 12.50};
+
+                pubSelect pub= new pubSelect(prices);
+                pub.displayinfo();
+                break;
+            case 2:
+                System.out.println("Pub Reviews\n");
+                String[] reviewCat = {"Cleanliness", "Friendliness", "Accessibility", "Uniqueness", "Range"};
+                double[] rating = {10, 8, 9, 9, 10};
+                double average = calcAverage(rating);
+                System.out.println("Ratings and Reviews: ");
+                for (int i = 0; i < reviewCat.length; i++) {
+                    System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
+                }
+                System.out.println("-Score: " + average);
+                //pubSelect review1 = new pubSelect(".");
+                //review1.reviewMaryMullins();
+                break;
+
+            case 3:
+                System.out.println("Pub Details\n");
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+        }
+    }
+    public static void skeffPD() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+
+        int select = scanner.nextInt();
+
+        switch (select) {
+            case 1:
+                System.out.println("Pub Prices\n");
+                double[] prices = {5.20, 6.00, 6.40, 6.00, 6.00, 5.70, 6.00, 1.00, 3.40, 2.40, 5.80, 5.60, 5.60, 5.60, 14.00, 10.00, 12.50, 13.50, 11 };
+
+                pubSelect pub= new pubSelect(prices);
+                pub.displayinfo();
+                break;
+            case 2:
+                System.out.println("Pub Reviews\n");
+                String[] reviewCat = {"Cleanliness", "Friendliness", "Accessibility", "Uniqueness", "Range"};
+                double[] rating = {8, 6, 10, 7, 9};
+                double average = calcAverage(rating);
+                System.out.println("Ratings and Reviews: ");
+                for (int i = 0; i < reviewCat.length; i++) {
+                    System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
+                }
+                System.out.println("-Score: " + average);
+                //pubSelect review1 = new pubSelect(".");
+                //review1.reviewDarcys();
+                break;
+
+            case 3:
+                System.out.println("Pub Details\n");
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+        }
+    }
+
+    public static void darcysPD(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("1. Pub Price\t 2. Pub Reviews\t 3. Pub Details ");
+
+        int select = scanner.nextInt();
+
+        switch (select) {
+            case 1:
+                System.out.println("Pub Prices\n");
+                double[] prices = {5.50, 6.00, 6.20, 6.00, 6.00, 6.00, 6.00, 1.50, 2.80, 2.40, 6.00, 6.00, 6.00, 6.50, 0, 0, 0, 0, 0 };
+
+                pubSelect pub= new pubSelect(prices);
+                pub.displayinfo();
                 break;
             case 2:
                 System.out.println("Pub Reviews\n");
@@ -219,8 +161,8 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                pubSelect review1 = new pubSelect(".");
-                review1.reviewDarcys();
+                //pubSelect review1 = new pubSelect(".");
+                //review1.reviewDarcys();
                 break;
 
             case 3:
@@ -231,6 +173,7 @@ public class pubOverview extends pubSelect {
                 System.out.println("Invalid choice.");
         }
     }
-}
+    }
+
 
 

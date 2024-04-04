@@ -21,18 +21,19 @@ public class Main {
                         //calls for pubSelect then populates the page with the pubs, the user then enters what pub they'd like
                         pubOverview.displayPubsEyreSq();
                         //then the pub prices for drinks is shown along with a review.
-                        pubOverview.pubDetails();
+
                         break;
                     case 2:
                         System.out.println("Shop Street's Pubs:\n");
                         pubOverview.displayPubsShopSt();
-                        pubOverview.pubDetails();
+
                         break;
 
                     case 3:
                         System.out.println("Latin Quarter's Pub's:");
                         pubOverview.displayPubsLatinQ();
-                        pubOverview.pubDetails();
+                        break;
+
                     case 4:
                         System.out.println("Other\n");
                         break;
@@ -43,7 +44,7 @@ public class Main {
                 break;
             default:
                 System.out.println("Invalid choice.");
-
+                break;
 
         }
     }
