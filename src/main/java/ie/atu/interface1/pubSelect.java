@@ -43,23 +43,23 @@ public class pubSelect {
         switch (EyreSqoverview) {
 
             case 1:
-                System.out.println("\n\n1.  You have chosen Mary Mullens\nOverview\nLocated 300 yards from the train" +
+                System.out.println("\nYou have chosen Mary Mullens\n\n*Overview*\nLocated 300 yards from the train" +
                         "station, Mullens has quickly transformed into one of the most popular pubs in the city");
                 pubOverview.maryMullinsPD();
                 break;
             case 2:
-                System.out.println("\n\n2.  You have chosen McGettigan's\nOverview\nMcGettigan's GWY is located on Eyre Square" +
+                System.out.println("\nYou have chosen McGettigan's\n\n*Overview*\nMcGettigan's GWY is located on Eyre Square" +
                         " in Galway. Pop in and try award-winning pub grub, " +
                         "watch live sports, or enjoy live music! ");
                 pubOverview.mcGettiganPD();
                 break;
             case 3:
-                System.out.println("\n\n3. You have chosen Skeff\nOverview\nUniquely designed busy bar in the heart of Galway " +
+                System.out.println("\nYou have chosen Skeff\n\n*Overview*\nUniquely designed busy bar in the heart of Galway " +
                         "city center serving wholesome, quality food.");
                 pubOverview.skeffPD();
                 break;
             case 4:
-                System.out.println("\n\n4.  You have chosen Darcy's\nOverview\nDarcy's is a Traditional Irish bar located on " +
+                System.out.println("\nYou have chosen Darcy's\n\n*Overview*\nDarcy's is a Traditional Irish bar located on " +
                         "Eyre Square in the heart of Galway city, just beside the train station");
                 pubOverview.darcysPD();
                 break;
@@ -79,18 +79,21 @@ public class pubSelect {
         int ShopStoverview = scanner.nextInt();
         switch (ShopStoverview) {
             case 1:
-                System.out.println("\n\n1.  You have chosen Barr an Chaladh\nOverview\nA country " +
+                System.out.println("\nYou have chosen Barr an Chaladh\n\n*Overview*\nA country " +
                         "pub in the heart of the city, " +
                         "Barr an Chaladh is just a stone's throw from Eyre Square and " +
                         "features traditional music performances seven nights a week.");
+                pubOverview.barrNaChPD();
                 break;
             case 2:
-                System.out.println("\n\n2.  You have chosen Buskers\nOverview\nFunky cafe, bar and restaurant with ancient " +
+                System.out.println("\nYou have chosen Buskers\n\n*Overview*\nFunky cafe, bar and restaurant with ancient " +
                         "stonework and modern art, serving an international menu");
+                pubOverview.buskersPD();
                 break;
             case 3:
-                System.out.println("\n\n3. You have chosen Taaffes\nOverview\nFantastic traditional Irish bar with great pints" +
+                System.out.println("\nYou have chosen Taaffes\n\n*Overview*\nFantastic traditional Irish bar with great pints" +
                         " of Guinness! Really good location and the staff are all very friendly too");
+                pubOverview.taaffesPD();
                 break;
             default:
                 System.out.println("Invalid choice.");
@@ -109,24 +112,29 @@ public class pubSelect {
         int LatinQoverview = scanner.nextInt();
         switch (LatinQoverview) {
             case 1:
-                System.out.println("\n\n1.  You have chosen Blue note\nOverview\nHas outdoor seating, " +
+                System.out.println("\nYou have chosen Blue note\n\n*Overview*\nHas outdoor seating, " +
                         "Serves great cocktails Doesn't accept reservations");
+                pubOverview.blueNotePD();
                 break;
             case 2:
-                System.out.println("\n\n2.  You have chosen Massimos\nOverview\nCocktails, beer & dancing in a long-running " +
+                System.out.println("\nYou have chosen Massimos\n\n*Overview*\nCocktails, beer & dancing in a long-running " +
                         "neighbourhood bar that has a covered patio.");
+                pubOverview.massimosPD();
                 break;
             case 3:
-                System.out.println("\n\n3.  You have chosen Monroes\nOverview\nMonroe's Tavern is renowned for it's friendly " +
+                System.out.println("\nYou have chosen Monroes\n\n*Overview*\nMonroe's Tavern is renowned for it's friendly " +
                         "staff, warm atmosphere and live music.");
+                pubOverview.monroesPD();
                 break;
             case 4:
-                System.out.println("\n\n4.  You have chosen Roisin Dubh\nOverview\nBar and club with two separate stages " +
+                System.out.println("\nYou have chosen Roisin Dubh\n\n*Overview*\nBar and club with two separate stages " +
                         "showcasing local and international live music and comedy acts.");
+                pubOverview.roisinDubhPD();
                 break;
             case 5:
-                System.out.println("\n\n12. You have chosen Taylor's\nOverview\nAuthentic and award-winning Irish Whiskey Bar " +
+                System.out.println("\nYou have chosen Taylor's\n\n*Overview*\nAuthentic and award-winning Irish Whiskey Bar " +
                         "with a long history, dating back to the early 19th Century.");
+                pubOverview.taylorsPD();
                 break;
             default:
                 System.out.println("Invalid choice.");
