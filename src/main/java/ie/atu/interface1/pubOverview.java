@@ -22,7 +22,7 @@ public class pubOverview extends pubSelect {
     public static double calcAverage(double[] rating) {
         int totalSum = 0;
         for (double num : rating) {
-            totalSum += num;
+            totalSum += (int) num;
         }
         return (double) totalSum / rating.length;
     }

@@ -3,11 +3,16 @@ package ie.atu.interface1;
 import java.util.Scanner;
 
 public class pubSelect {
+    private String darcys;
     private String[] drinks;
     private double[] prices;
+    static public String[] eyreSqPub = {"1. Mary Mullins", "2. McGettigan's", "3. Skeff", "4. Darcy's"};
+    static public String[] shopStPub = {"1. Barr an Chaladh", "2. Busker Brownes", "3. Taffees"};
+    static public String[] latinQrPub = {"1. Blue Note", "2. Massimo's", "3. Monroe's", "4.Roisin Dubh", "5. Taylor's"};
+    static public String[] otherPub = {""};
     public String[] reviewCat;
     public double[] rating;
-    private String darcys;
+
 
     private String BarrNaCh;
 
@@ -33,12 +38,13 @@ public class pubSelect {
     }
     public static void displayPubsEyreSq() {
         Scanner scanner = new Scanner(System.in);
-        //System.out.println("\n\nWelcome to the Pub Overview\n\n");
         System.out.println("Please enter the number which corresponds to the pub you would like to explore!\n");
-        System.out.println("1. Mary Mullins\t\t2. McGettigan's\n3. Skeff\t\t4. Darcy's");
-        //System.out.println("1. Barr an Chaladh\t\t2. Blue Note\n3. Buskers\t\t\t\t4. Darcy's\n5. Mary Mullens\t\t\t6. Massimos\n7. McGettigan's\t\t\t8. Monroes\n9. Roisin Dubh\t\t\t10. Skeff\n11. Taaffes\t\t\t\t12. Taylor's ");
-        System.out.println("Pub number: ");
 
+        for(int x = 0; x < eyreSqPub.length; x++){
+            System.out.println(eyreSqPub[x]);
+        }
+
+        System.out.println("Pub number: ");
         int EyreSqoverview = scanner.nextInt();
         switch (EyreSqoverview) {
 
@@ -70,12 +76,15 @@ public class pubSelect {
 
     public static void displayPubsShopSt(){
         Scanner scanner = new Scanner(System.in);
-        //System.out.println("\n\nWelcome to the Pub Overview\n\n");
-        System.out.println("Please enter the number which corresponds to the pub you would like to explore!\n");
-        System.out.println("1. Barr an Chaladh\t\t2. Busker Brownes\t\t3. Taffees");
-        //System.out.println("1. Barr an Chaladh\t\t2. Blue Note\n3. Buskers\t\t\t\t4. Darcy's\n5. Mary Mullens\t\t\t6. Massimos\n7. McGettigan's\t\t\t8. Monroes\n9. Roisin Dubh\t\t\t10. Skeff\n11. Taaffes\t\t\t\t12. Taylor's ");
-        System.out.println("Pub number: ");
 
+        System.out.println("Please enter the number which corresponds to the pub you would like to explore!\n");
+        String[] shopStPub = {"1. Barr an Chaladh", "2. Busker Brownes", "3. Taffees"};
+
+        for(int x = 0; x < shopStPub.length; x++){
+            System.out.println(shopStPub[x]);
+        }
+
+        System.out.println("Pub number: ");
         int ShopStoverview = scanner.nextInt();
         switch (ShopStoverview) {
             case 1:
@@ -96,7 +105,8 @@ public class pubSelect {
                 pubOverview.taaffesPD();
                 break;
             default:
-                System.out.println("Invalid choice.");
+                System.out.println("Invalid choice.\n");
+                System.out.println("This Pub is under construction/maintenance, check back soon!");
 
         }
 
@@ -105,6 +115,10 @@ public class pubSelect {
         Scanner scanner = new Scanner(System.in);
         //System.out.println("\n\nWelcome to the Pub Overview\n\n");
         System.out.println("Please enter the number which corresponds to the pub you would like to explore!\n");
+        String[] latinQrPub = {"1. Blue Note", "2. Massimo's", "3. Monroe's", "4.Roisin Dubh", "5. Taylor's"};
+        for(int x = 0; x < latinQrPub.length; x++){
+            System.out.println(latinQrPub[x]);
+        }
         System.out.println("1. Blue Note\t\t2. Massimo's\n3. Monroe's\t\t4.Roisin Dubh\n5. Taylor's");
         //System.out.println("1. Barr an Chaladh\t\t2. Blue Note\n3. Buskers\t\t\t\t4. Darcy's\n5. Mary Mullens\t\t\t6. Massimos\n7. McGettigan's\t\t\t8. Monroes\n9. Roisin Dubh\t\t\t10. Skeff\n11. Taaffes\t\t\t\t12. Taylor's ");
         System.out.println("Pub number: ");
@@ -140,6 +154,124 @@ public class pubSelect {
                 System.out.println("Invalid choice.");
         }
 
+    }
+
+    public static void addPub(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What area would you like to add the pub to? ");
+        System.out.println("\n1. Eyre Square\t 2. Shop Street\t 3. The Latin Quarter\t 4. Other\nArea: ");
+        int area = scanner.nextInt();
+
+        switch(area){
+            case 1:
+                System.out.println("You selected Eyre Square.\n");
+                try {
+                    Scanner newPub = new Scanner(System.in);
+                    System.out.println("Enter the name of the new pub: ");
+                    String newPubName = newPub.nextLine();
+
+                    String[] updatedEyreSqPub = new String[eyreSqPub.length + 1];
+
+                    // Copy existing elements to the new array
+                    for (int i = 0; i < eyreSqPub.length; i++) {
+                        updatedEyreSqPub[i] = eyreSqPub[i];
+                    }
+
+                    updatedEyreSqPub[eyreSqPub.length] = newPubName;
+
+                    eyreSqPub = updatedEyreSqPub;
+
+                    System.out.println("The new Pub has been listed");
+                } catch (Exception e) {
+                    System.out.println("Invalid input. Please enter a valid name for the new pub.");
+                }
+                displayPubsEyreSq();
+                break;
+
+            case 2:
+                System.out.println("You selected Shop Street.\n");
+                try {
+                    Scanner newPub = new Scanner(System.in);
+                    System.out.println("Enter the name of the new pub: ");
+                    String newPubName = newPub.nextLine();
+
+                    // add on to the array by creating a new array with one extra space
+                    String[] updatedShopStPub = new String[shopStPub.length + 1];
+
+                    // Copy existing strings to the new array
+                    for (int i = 0; i < shopStPub.length; i++) {
+                        updatedShopStPub[i] = shopStPub[i];
+                    }
+
+                    // Add the new pub name to the end of the new array
+                    updatedShopStPub[shopStPub.length] = newPubName;
+
+                    // put back into the old array
+                    shopStPub = updatedShopStPub;
+
+                    System.out.println("The new Pub has been listed");
+                } catch (Exception e) {
+                    System.out.println("Invalid input. Please enter a valid name for the new pub.");
+                }
+                displayPubsShopSt();
+                break;
+            case 3:
+                System.out.println("You selected the Latin Quarter.\n");
+                try {
+                    Scanner newPub = new Scanner(System.in);
+                    System.out.println("Enter the name of the new pub: ");
+                    String newPubName = newPub.nextLine();
+
+                    // add on to the array by creating a new array with one extra space
+                    String[] updatedLatinQrPub = new String[latinQrPub.length + 1];
+
+                    // Copy existing strings to the new array
+                    for (int i = 0; i < shopStPub.length; i++) {
+                        updatedLatinQrPub[i] = shopStPub[i];
+                    }
+
+                    // Add the new pub name to the end of the new array
+                    updatedLatinQrPub[latinQrPub.length] = newPubName;
+
+                    // put back into the old array
+                    shopStPub = updatedLatinQrPub;
+
+                    System.out.println("The new Pub has been listed");
+                } catch (Exception e) {
+                    System.out.println("Invalid input. Please enter a valid name for the new pub.");
+                }
+                displayPubsLatinQ();
+                break;
+            case 4:
+                System.out.println("You selected Other.\n");
+                try {
+                    Scanner newPub = new Scanner(System.in);
+                    System.out.println("Enter the name of the new pub: ");
+                    String newPubName = newPub.nextLine();
+
+                    // add on to the array by creating a new array with one extra space
+                    String[] updatedOtherPub = new String[otherPub.length + 1];
+
+                    // Copy existing strings to the new array
+                    for (int i = 0; i < otherPub.length; i++) {
+                        updatedOtherPub[i] = otherPub[i];
+                    }
+
+                    // Add the new pub name to the end of the new array
+                    updatedOtherPub[otherPub.length] = newPubName;
+
+                    // put back into the old array
+                    shopStPub = updatedOtherPub;
+
+                    System.out.println("The new Pub has been listed");
+                } catch (Exception e) {
+                    System.out.println("Invalid input. Please enter a valid name for the new pub.");
+                }
+                //displayPubsOther();, make this and populate it with the array. There is no other pubs only
+                // when a new pub is created in this area
+                break;
+
+        }
     }
     public void reviewDarcys(){
         System.out.println("\nReviews:\n\n“Best pub in Galway”\n" +
