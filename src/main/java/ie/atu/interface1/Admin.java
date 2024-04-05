@@ -6,7 +6,7 @@ public class Admin implements UserAuthenticator{
     private final String password = "doe";
 
     public boolean authenticate(String username, String password){
-        return username.equals(username) && password.equals(password);
+        return username.equals(this.username) && password.equals(this.password);
     }
     public static void authenticate() {
         Admin admin = new Admin();
@@ -19,7 +19,7 @@ public class Admin implements UserAuthenticator{
         String enteredPassword = scanner.nextLine();
 
         if (admin.authenticate(enteredUsername, enteredPassword)) {
-            System.out.println("\nPublican authentication successful!\n\nWhat would you wish to update/add:");
+            System.out.println("\nPublican authentication successful!\n\nWhat  would you wish to update/add:");
             System.out.println("\n1. Add pub\t 2. Add drink\t 3. Delete Pub/Drink\nCommand: ");
             int command = scanner.nextInt();
 
@@ -27,11 +27,11 @@ public class Admin implements UserAuthenticator{
 
             switch(command){
                 case 1:
-                    System.out.println("Enter the name of the new pub: ");
-                    String newPub = scanner.nextLine();
+                    //System.out.println("Enter the name of the new pub: ");
+                    //String newPub = scanner.nextLine();
                     //Add a new pub into the arrayList
-                    //pubSelect.add(newPub);
-                    System.out.println("\nPub added.");
+                    pubSelect.addPub();
+                    //System.out.println("\nPub added.");
                     break;
                 case 2:
                     System.out.println("Enter the new drink: ");
