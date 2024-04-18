@@ -3,7 +3,6 @@ package ie.atu.interface1;
 import java.util.Scanner;
 
 public class pubSelect {
-    private static String darcys;
     private String[] drinks;
     private double[] prices;
     static public String[] eyreSqPub = {"1. Mary Mullins", "2. McGettigan's", "3. Skeff", "4. Darcy's"};
@@ -284,8 +283,7 @@ public class pubSelect {
                 "The staff were really friendly so we came back in later the same day and had a great Sunday " +
                 "night out!\n" +
                 "\n" +
-                "Date of visit: August 2023\n\n"
-                + darcys);
+                "Date of visit: August 2023\n\n");
     }
 
     public static void reviewBarrNaCh(){
@@ -299,8 +297,7 @@ public class pubSelect {
                 "Monty! Where can I start? The best bartender out there. \n" +
                 "Remembers all of our names. Remembers all of our orders.\n" +
                 " Just made our night! Give this guy a raise asap!\n" +
-                "Date of visit: August 2022\n\n"
-        /*+ BarrNaChalladh*/);
+                "Date of visit: August 2022\n\n");
     }
 
     public static void reviewBlueNote(){
@@ -314,8 +311,7 @@ public class pubSelect {
                         "Had a great Monday night in ‘the blue’ as the locals call it. Bartenders were full\n" +
                         "of banter and although it was quiet there was plenty of craic. \n" +
                         "Casual and relaxed with friendly service. Oh and board games too\n" +
-                        "Date of visit: April 2019\n\n"
-                /*+ BlueNote*/);
+                        "Date of visit: April 2019\n\n");
     }
 
     public static void reviewTaffes(){
@@ -331,8 +327,7 @@ public class pubSelect {
                         "Incredible live music, excellent drinks, and good craic! Every night they have live\n" +
                         "traditional Irish music. I went 3 times in my week in Galway and loved my experience\n" +
                         "every time I came here. \n" +
-                        "Date of visit: January 2024\n\n"
-                /*+ Taffes*/);
+                        "Date of visit: January 2024\n\n");
     }
 
     public static void reviewTaylors(){
@@ -348,11 +343,10 @@ public class pubSelect {
                         "Great buzz and great cocktails\n" +
                         "Great beer garden with great music and friendly bouncers which is always nice to see! Cocktails are\n" +
                         "amazing ! The cocktail making guy who looks like Sam Thompson makes the tastiest drinks \n" +
-                        "Date of visit: August 2022\n\n"
-                /*+ Taylors*/);
+                        "Date of visit: August 2022\n\n");
     }
 
-    public static void reviewFibbers(){
+   /* public static void reviewFibbers(){
         System.out.println("\nReviews:\n\nMust visit \n" +
                         "This pub is in the heart of galway, it has been my best experience in a pub in galway.\n" +
                         "The staff are exceptional, they cater to your every need. Would definitely recommend\n" +
@@ -364,9 +358,8 @@ public class pubSelect {
                         "Not honouring it's bookings.\n" +
                         "Not willing to fulfill it's bookings. Not very welcoming to visitors. Probably best left to\n" +
                         "the locals. Disgusting attitude to customers. \n" +
-                        "Date of visit: August 2021\n\n"
-                /*+ Taylors*/);
-    }
+                        "Date of visit: August 2021\n\n");
+    }*/
 
     public static void reviewMassimos(){
         System.out.println("\nReviews:\n\nMy birthday \n" +
@@ -381,8 +374,7 @@ public class pubSelect {
                         "Booking fee at Massimos\n" +
                         "The booking fee is not necessary! We all showed up, bought multiple rounds of drink\n" +
                         "and were still charged a booking fee! \n" +
-                        "Date of visit: October 2021\n\n"
-                /*+ Massimos*/);
+                        "Date of visit: October 2021\n\n");
     }
 
     public static void reviewSkeff(){
@@ -399,8 +391,7 @@ public class pubSelect {
                         "We discovered the bar within an hour of arriving & we returned a few times over the\n" +
                         "weekend we were in Galway. It was amazing - the team working were fab & there was\n" +
                         "never any waiting at the bar.\n" +
-                        "Date of visit: March 2024\n\n"
-                /*The Skeff*/);
+                        "Date of visit: March 2024\n\n");
     }
 
     public static void reviewBuskers(){
@@ -417,8 +408,7 @@ public class pubSelect {
                         "We discovered the bar within an hour of arriving & we returned a few times over the\n" +
                         "weekend we were in Galway. It was amazing - the team working were fab & there was\n" +
                         "never any waiting at the bar.\n" +
-                        "Date of visit: September 2023\n\n"
-                /*Busker Brownes*/);
+                        "Date of visit: September 2023\n\n");
     }
 
     public static void reviewMaryMullins(){
@@ -428,8 +418,7 @@ public class pubSelect {
                         "Galway's newest bar and restaurant\n" +
                         "opened just a few weeks, has been given a major boost after one \n" +
                         "social media foodie star gave it a roaring review.\n" +
-                        "Date of visit:  January 2024\n.\n"
-                /*Mary Mullins*/);
+                        "Date of visit:  January 2024\n.\n");
     }
 
     public static void reviewMonroes(){
@@ -447,8 +436,7 @@ public class pubSelect {
                         "come in for the music for a half hour till 9 . Not a bother even a guy called Gary\n" +
                         "working there made sure we got seats asap. Staff great , kids brownie great and nice\n" +
                         "atmosphere. Well done to all concerned!\n" +
-                        "Date of visit: February 2024\n\n"
-                /*Monroes*/);
+                        "Date of visit: February 2024\n\n");
     }
 
     public static void reviewRoisinDubh(){
@@ -463,8 +451,22 @@ public class pubSelect {
                         "Great venue\n" +
                         "Excellent venue, come here Everytime I get the chance to visit Galway, it's always buzzing, great music\n" +
                         "played and the bands they get in are top notch, worth a night in Galway just to drink here\n" +
-                        "Date of visit: February 2022\n\n"
-                /*Roisin Dubh*/);
+                        "Date of visit: February 2022\n\n");
+    }
+
+    public static void reviewMcGettigans(){
+        System.out.println("\nReviews:\n\nHidden gem of Galway\n" +
+                "Walked in for a Guinness, found 2 seats at the bar. Nathan and Monisha welcomed us\n" +
+                "like family and were awesome! They gave the best recommendations.\n" +
+                "Date of visit: September 2023\n.\n" +
+                "Great time\n" +
+                "Jack was great to talk to about local history and the rest of the young staff were\n" +
+                "friendly and very attentive. Highly recommend.\n" +
+                "Date of visit:  September 2023\n.\n" +
+                "Absolutely fabulous\n" +
+                "Absolutely fab!! Came here to watch a game and get some snacks and drinks and\n" +
+                "was delicious and the staff were lovely! Will definitely be coming here again!!!\n" +
+                "Date of visit: August 2023\n\n");
     }
 
 }
