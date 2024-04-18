@@ -32,6 +32,7 @@ public class pubOverview extends pubSelect {
         switch (select) {
             case 1:
                 System.out.println("Pub Prices\n");
+
                 double[] prices = {5.70, 6.70, 6.30, 6.50, 6.80, 4.50, 6.00, 1.00, 3.00, 2.50, 5.50, 5.50, 6.00, 6.20, 11.50, 13.00, 13.60, 13.00, 11.90};
 
                 pubSelect pub= new pubSelect(prices);

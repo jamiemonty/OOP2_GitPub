@@ -35,6 +35,7 @@ public class Admin implements UserAuthenticator{
                     break;
                 case 2:
                     pubSelect.addDrink();
+
                     break;
                 case 3:
                     System.out.println("What pub or drink do you want to erase: ");

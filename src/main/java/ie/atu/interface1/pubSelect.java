@@ -254,6 +254,7 @@ public class pubSelect {
                     // Copy existing strings to the new array
                     for (int i = 0; i < otherPub.length; i++) {
                         updatedOtherPub[i] = otherPub[i];
+
                     }
 
                     // Add the new pub name to the end of the new array
