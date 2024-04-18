@@ -57,6 +57,8 @@ public class pubOverview extends pubSelect {
 
             case 3:
                 System.out.println("Pub Details\n");
+                System.out.println("Phone number: 091 331214\nE-mail: INFO@MARYMULLENS.IE\nAddress: 12/14 Prospect Hill " +
+                        "Galway\n");
                 break;
 
             default:
@@ -94,6 +96,7 @@ public class pubOverview extends pubSelect {
 
             case 3:
                 System.out.println("Pub Details\n");
+                System.out.println("Phone number: 091 331010\nE-mail: galway@mcgettigans.com\nAddress: 9-11, Prospect Hill, Eyre Square Galway\n");
                 break;
 
             default:
@@ -130,6 +133,7 @@ public class pubOverview extends pubSelect {
 
             case 3:
                 System.out.println("Pub Details\n");
+                System.out.println("Phone number: 091 563 173\nE-mail: party@theskeff.ie\nAddress: Skeffington Arms Hotel 27 Eyre Square Galway\n");
                 break;
 
             default:
@@ -167,6 +171,7 @@ public class pubOverview extends pubSelect {
 
             case 3:
                 System.out.println("Pub Details\n");
+                System.out.println("Phone number: 086 070 9576\nE-mail: info@darcys.ie\nAddress: 2 Forster Street Galway\n");
                 break;
 
             default:
@@ -204,6 +209,7 @@ public class pubOverview extends pubSelect {
 
             case 3:
                 System.out.println("Pub Details\n");
+                System.out.println("Phone number: 091 895762\nE-mail: info@barranchaladh.ie\nAddress: 3 Dalys Place Woodquay Galway\n");
                 break;
 
             default:
@@ -241,6 +247,8 @@ public class pubOverview extends pubSelect {
 
             case 3:
                 System.out.println("Pub Details\n");
+                System.out.println("Phone number: 091 563377\nE-mail: events@buskerbrownes.com\nAddress: 5 Cross Street Upper" +
+                        "Galway\n");
                 break;
 
             default:
@@ -278,6 +286,7 @@ public class pubOverview extends pubSelect {
 
             case 3:
                 System.out.println("Pub Details\n");
+                System.out.println("Phone number: 091 589116\nE-mail: bookings@bluenote.ie\nAddress: 3 West William Street Galway\n");
                 break;
 
             default:
@@ -315,6 +324,7 @@ public class pubOverview extends pubSelect {
 
             case 3:
                 System.out.println("Pub Details\n");
+                System.out.println("Phone number: 091 582239\nE-mail: massimogalway@gmail.com\nAddress: 10 William Street West Galway\n");
                 break;
 
             default:
@@ -352,6 +362,7 @@ public class pubOverview extends pubSelect {
 
             case 3:
                 System.out.println("Pub Details\n");
+                System.out.println("Phone number: 091 583397\nE-mail: Info@monroes.ie\nAddress: 14 Dominick Street Upper Galway\n");
                 break;
 
             default:
@@ -389,6 +400,8 @@ public class pubOverview extends pubSelect {
 
             case 3:
                 System.out.println("Pub Details\n");
+                System.out.println("Phone number: 091 586540\nE-mail: info@roisindubh.net\nAddress: Róisín Dubh" +
+                        "9 Dominic Street Upper" + "Galway\n");
                 break;
 
             default:
@@ -426,6 +439,8 @@ public class pubOverview extends pubSelect {
 
             case 3:
                 System.out.println("Pub Details\n");
+                System.out.println("Phone number: 091 450475\nE-mail: reservations@taylorsgalway.ie\nAddress: 7 Dominick Street Upper," +
+                        "Galway’s Westend");
                 break;
 
             default:
@@ -463,6 +478,7 @@ public class pubOverview extends pubSelect {
 
             case 3:
                 System.out.println("Pub Details\n");
+                System.out.println("Phone number: 091 564066\nE-mail: taaffesbar@gmail.com\nAddress: 19 Shop Street Galway\n");
                 break;
 
             default:
