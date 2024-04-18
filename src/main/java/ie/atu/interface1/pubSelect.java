@@ -3,7 +3,7 @@ package ie.atu.interface1;
 import java.util.Scanner;
 
 public class pubSelect {
-    private String darcys;
+    private static String darcys;
     private String[] drinks;
     private double[] prices;
     static public String[] eyreSqPub = {"1. Mary Mullins", "2. McGettigan's", "3. Skeff", "4. Darcy's"};
@@ -273,7 +273,7 @@ public class pubSelect {
 
         }
     }
-    public void reviewDarcys(){
+    public static void reviewDarcys(){
         System.out.println("\nReviews:\n\n“Best pub in Galway”\n" +
                 "“Great bar, friendly staff and live music.”\n.\n" +
                 "Best bar we visited while in galway, Philip and robert are an absolute tonic, \n" +
@@ -288,7 +288,7 @@ public class pubSelect {
                 + darcys);
     }
 
-    public void BarrNaCh(){
+    public static void reviewBarrNaCh(){
         System.out.println("\nReviews:\n\nBrilliant pub ,live music seven nights a week \n" +
                 "and owner Michael a gent and a character good upstairs \n" +
                 "in mama rich a lovely experience make sure to book\n" +
@@ -303,7 +303,168 @@ public class pubSelect {
         /*+ BarrNaChalladh*/);
     }
 
+    public static void reviewBlueNote(){
+        System.out.println("\nReviews:\n\nA pub in the heart of Galway. \n" +
+                        "A DJ played some nice music, we got drunk and had a good time. \n" +
+                        "Alway tip your bartenders!\n" +
+                        "Date of visit: August 2023\n.\n" +
+                        "Lovely warm pub in Galway near Kai Restaurant. \n" +
+                        "Serves my favourite drink Beekon Batches, honey refresher.\n" +
+                        "Date of visit: February 2020\n.\n" +
+                        "Had a great Monday night in ‘the blue’ as the locals call it. Bartenders were full\n" +
+                        "of banter and although it was quiet there was plenty of craic. \n" +
+                        "Casual and relaxed with friendly service. Oh and board games too\n" +
+                        "Date of visit: April 2019\n\n"
+                /*+ BlueNote*/);
+    }
 
+    public static void reviewTaffes(){
+        System.out.println("\nReviews:\n\nNice old time vibe. \n" +
+                        "This was a quiet little bar when we first stepped in, \n" +
+                        "but got busy while we sat there. Lots of locals and they all seemed to know each other.\n" +
+                        "Date of visit: April 2024\n.\n" +
+                        "Great pub with the best Irish coffee \n" +
+                        "Cosy place to get away from the stormy Irish weather.  The delicious Irish coffee will\n" +
+                        "give you a warm hug and a great mood. Food was delicious and well priced.\n" +
+                        "Date of visit: January 2024\n.\n" +
+                        "90 craic at Taaffes\n" +
+                        "Incredible live music, excellent drinks, and good craic! Every night they have live\n" +
+                        "traditional Irish music. I went 3 times in my week in Galway and loved my experience\n" +
+                        "every time I came here. \n" +
+                        "Date of visit: January 2024\n\n"
+                /*+ Taffes*/);
+    }
 
+    public static void reviewTaylors(){
+        System.out.println("\nReviews:\n\nCocktails are top tier \n" +
+                        "Lucy makes the most excellent cocktails, and is a really lovely friendly staff member, could not \n" +
+                        "recommend her enough! try the six notions cocktail also, it's delish!\n" +
+                        "Date of visit: February 2024\n.\n" +
+                        "Party experience \n" +
+                        "All the staff were absolutely amazing. Couldn’t do enough for us when I arranged a surprise party for\n" +
+                        "my daughter. Live music. Drink was great. I can’t praise everyone enough. Always enjoyed going to\n" +
+                        "Taylor’s but last night was such a memorable experience. Can’t wait to go back\n" +
+                        "Date of visit: March 2023\n.\n" +
+                        "Great buzz and great cocktails\n" +
+                        "Great beer garden with great music and friendly bouncers which is always nice to see! Cocktails are\n" +
+                        "amazing ! The cocktail making guy who looks like Sam Thompson makes the tastiest drinks \n" +
+                        "Date of visit: August 2022\n\n"
+                /*+ Taylors*/);
+    }
+
+    public static void reviewFibbers(){
+        System.out.println("\nReviews:\n\nMust visit \n" +
+                        "This pub is in the heart of galway, it has been my best experience in a pub in galway.\n" +
+                        "The staff are exceptional, they cater to your every need. Would definitely recommend\n" +
+                        "Date of visit: January 2024\n.\n" +
+                        "Top Tier \n" +
+                        "Staff are good fun and great spot to meet a random lad and talk politics, Guinness is\n" +
+                        "very good and loads of options on draught\n" +
+                        "Date of visit: January 2024\n.\n" +
+                        "Not honouring it's bookings.\n" +
+                        "Not willing to fulfill it's bookings. Not very welcoming to visitors. Probably best left to\n" +
+                        "the locals. Disgusting attitude to customers. \n" +
+                        "Date of visit: August 2021\n\n"
+                /*+ Taylors*/);
+    }
+
+    public static void reviewMassimos(){
+        System.out.println("\nReviews:\n\nMy birthday \n" +
+                        "Went here for my birthday on Monday the 29th of August with my family. From start to\n" +
+                        "finish the service and food was amazing. Great value for money and fresh food.\n" +
+                        "Brilliant service. \n" +
+                        "Date of visit: August 2022\n.\n" +
+                        "Best staff in Galway\n" +
+                        "Incredible customer service staff really went above and beyond to make our visit\n" +
+                        "special! I was served by Emily A and Aaron and they were amazing!\n" +
+                        "Date of visit: January 2022\n.\n" +
+                        "Booking fee at Massimos\n" +
+                        "The booking fee is not necessary! We all showed up, bought multiple rounds of drink\n" +
+                        "and were still charged a booking fee! \n" +
+                        "Date of visit: October 2021\n\n"
+                /*+ Massimos*/);
+    }
+
+    public static void reviewSkeff(){
+        System.out.println("\nReviews:\n\nWell worth a visit..great staff superb food.. \n" +
+                        "I found this bar to be an amazing place to visit...The staff were excellent and did an\n" +
+                        "amazing job considering they were flat out and under pressure but at no time did I\n" +
+                        "see any of them buckle...Congrats to you all..\n" +
+                        "Date of visit: March 2024\n.\n" +
+                        "Arrived 6pm 11pm still here!\n" +
+                        "Came in for quick bite to eat and still here. Food amazing, staff spectacular. What an\n" +
+                        "amazing place. Will be back. Awesome.\n" +
+                        "Date of visit:  March 2024\n.\n" +
+                        "Fab night\n" +
+                        "We discovered the bar within an hour of arriving & we returned a few times over the\n" +
+                        "weekend we were in Galway. It was amazing - the team working were fab & there was\n" +
+                        "never any waiting at the bar.\n" +
+                        "Date of visit: March 2024\n\n"
+                /*The Skeff*/);
+    }
+
+    public static void reviewBuskers(){
+        System.out.println("\nReviews:\n\nGood drinks and fun times!\n" +
+                        "The drinks, especially cocktails are so good. The bartenders are all super nice and\n" +
+                        "helpful, Darren and Aaron made me the best gin brambles I’ve ever had. Would come\n" +
+                        "back anytime!\n" +
+                        "Date of visit: March 2024\n.\n" +
+                        "Good food on a rainy day\n" +
+                        "Great food, great service, lovely atmosphere, would definitely come back again, try\n" +
+                        "the fish and chips \n" +
+                        "Date of visit:  March 2024\n.\n" +
+                        "Fab night\n" +
+                        "We discovered the bar within an hour of arriving & we returned a few times over the\n" +
+                        "weekend we were in Galway. It was amazing - the team working were fab & there was\n" +
+                        "never any waiting at the bar.\n" +
+                        "Date of visit: September 2023\n\n"
+                /*Busker Brownes*/);
+    }
+
+    public static void reviewMaryMullins(){
+        System.out.println("\nReviews:\n\nFantastic new bar!!\n" +
+                        "Great craic, entertainment, service and location.\n" +
+                        "Date of visit: December 2023\n.\n" +
+                        "Galway's newest bar and restaurant\n" +
+                        "opened just a few weeks, has been given a major boost after one \n" +
+                        "social media foodie star gave it a roaring review.\n" +
+                        "Date of visit:  January 2024\n.\n"
+                /*Mary Mullins*/);
+    }
+
+    public static void reviewMonroes(){
+        System.out.println("\nReviews:\n\nNice spot - lively and fun.\n" +
+                        "Had an early dinner here. Pretty good selection of food. Food came out quickly. It\n" +
+                        "was good. Fish and chips was very good. Stew was also very good. \n" +
+                        "Date of visit: March 2024\n.\n" +
+                        "Delicious and fun!\n" +
+                        "Food was delicious! Wait staff was very friendly. Live music and atmosphere were\n" +
+                        "fantastic! We popped in here for lunch the day we arrived and are so glad we did.\n" +
+                        "The live music was wonderful and so many people were up and dancing.\n" +
+                        "Date of visit:  February 2024\n.\n" +
+                        "A nice pint !\n" +
+                        "Went for a drink and a bit of live music last night here . Asked could my 6 year old\n" +
+                        "come in for the music for a half hour till 9 . Not a bother even a guy called Gary\n" +
+                        "working there made sure we got seats asap. Staff great , kids brownie great and nice\n" +
+                        "atmosphere. Well done to all concerned!\n" +
+                        "Date of visit: February 2024\n\n"
+                /*Monroes*/);
+    }
+
+    public static void reviewRoisinDubh(){
+        System.out.println("\nReviews:\n\nGreat fun!\n" +
+                        "Great pub- friendly faces, fun music and a buzzing dance floor downstairs! Always a fun night in the\n" +
+                        "Roisin. Very decent open mic nights too :) The best late bar in Galway. Highly recommended!\n" +
+                        "Date of visit: October 2022\n.\n" +
+                        "Great Pub\n" +
+                        "Great pub, always have cool gigs on and a lovely atmosphere.\n" +
+                        "Staff are excellent, Debi in particular is an exemplary member of the team.\n" +
+                        "Date of visit:  May 2022\n.\n" +
+                        "Great venue\n" +
+                        "Excellent venue, come here Everytime I get the chance to visit Galway, it's always buzzing, great music\n" +
+                        "played and the bands they get in are top notch, worth a night in Galway just to drink here\n" +
+                        "Date of visit: February 2022\n\n"
+                /*Roisin Dubh*/);
+    }
 
 }
