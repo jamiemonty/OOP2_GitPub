@@ -34,10 +34,7 @@ public class Admin implements UserAuthenticator{
                     //System.out.println("\nPub added.");
                     break;
                 case 2:
-                    System.out.println("Enter the new drink: ");
-                    String newDrink = scanner.nextLine();
-                    //pubMenu.add(newDrink);
-                    System.out.println("\nDrink added.");
+                    pubSelect.addDrink();
                     break;
                 case 3:
                     System.out.println("What pub or drink do you want to erase: ");
