@@ -48,8 +48,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+                pubSelect.reviewMaryMullins();
                 break;
 
             case 3:
@@ -87,8 +86,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+                pubSelect.reviewMcGettigans();
                 break;
 
             case 3:
@@ -124,8 +122,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewDarcys();
+                pubSelect.reviewSkeff();
                 break;
 
             case 3:
@@ -162,8 +159,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewDarcys();
+                pubSelect.reviewDarcys();
                 break;
 
             case 3:
@@ -200,8 +196,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewDarcys();
+                pubSelect.reviewBarrNaCh();
                 break;
 
             case 3:
@@ -238,8 +233,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+                pubSelect.reviewBuskers();
                 break;
 
             case 3:
@@ -277,8 +271,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+                pubSelect.reviewBlueNote();
                 break;
 
             case 3:
@@ -315,8 +308,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+                pubSelect.reviewMassimos();
                 break;
 
             case 3:
@@ -353,8 +345,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+                pubSelect.reviewMonroes();
                 break;
 
             case 3:
@@ -391,8 +382,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+                pubSelect.reviewRoisinDubh();
                 break;
 
             case 3:
@@ -430,8 +420,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+                pubSelect.reviewTaylors();
                 break;
 
             case 3:
@@ -469,8 +458,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+                pubSelect.reviewTaffes();
                 break;
 
             case 3:
