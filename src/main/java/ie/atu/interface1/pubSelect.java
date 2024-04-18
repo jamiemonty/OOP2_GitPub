@@ -3,7 +3,7 @@ package ie.atu.interface1;
 import java.util.Scanner;
 
 public class pubSelect {
-    private String[] drinks;
+
     private double[] prices;
     static public String[] eyreSqPub = {"1. Mary Mullins", "2. McGettigan's", "3. Skeff", "4. Darcy's"};
     static public String[] shopStPub = {"1. Barr an Chaladh", "2. Busker Brownes", "3. Taffees"};
@@ -16,21 +16,20 @@ public class pubSelect {
     private String BarrNaCh;
 
 
-    public pubSelect(/*String[] drinks,*/ double[] prices){
-        //this.drinks = drinks;
+    public pubSelect(double[] prices){
         this.prices = prices;
+        initializeDrinks();
 
     }
 
-   // public pubSelect(String[] reviewCat, double[] rating){
-    //    this.reviewCat = reviewCat;
-    //    this.rating = rating;
-   // }
-    public void displayinfo() {
-        System.out.println("Drink Menu + Prices\n_____________________ ");
-        String[] drinks = {"Guinness ", "Heineken ", "Orchard Thieves ", "\nVodka ", "Jameson ", "Bacardi ", "Gin ", "\nDash" ,
+    private void initializeDrinks(){
+        drinks = new String[]{"Guinness ", "Heineken ", "Orchard Thieves ", "\nVodka ", "Jameson ", "Bacardi ", "Gin ", "\nDash" ,
                 "Mineral ", "Tonic ", "\nBaby Guinness ", "Tequila ", "Sambucca ", "AfterShock ", "\nOld Fashioned ", "Daquiri ",
                 "Sex On The Beach ", "Martini ", "Whiskey Sours "};
+    }
+
+    public void displayinfo() {
+        System.out.println("Drink Menu + Prices\n_____________________ ");
         for (int i = 0; i < drinks.length; i++) {
             System.out.println(drinks[i] + "- €" + prices[i]);
         }
@@ -254,6 +253,7 @@ public class pubSelect {
                     // Copy existing strings to the new array
                     for (int i = 0; i < otherPub.length; i++) {
                         updatedOtherPub[i] = otherPub[i];
+
                     }
 
                     // Add the new pub name to the end of the new array
@@ -272,6 +272,80 @@ public class pubSelect {
 
         }
     }
+
+    public static void addDrink(){
+        try {
+            Scanner newDrink = new Scanner(System.in);
+            System.out.println("Enter the name of the new drink: ");
+            String newDrinkName = newDrink.nextLine();
+
+            int index = drinks.length;
+
+            String[] updatedDrinks = new String[index + 1];
+
+            // Copy existing elements to the new array
+            for (int i = 0; i < drinks.length; i++) {
+                updatedDrinks[i] = drinks[i];
+            }
+
+            updatedDrinks[index] = newDrinkName;
+
+            drinks = updatedDrinks;
+
+            System.out.println("The new drink has been added successfully.");
+        } catch (Exception e) {
+            System.out.println("Invalid input. Please enter a valid name for the new pub.");
+        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\nWhat pub would you like to add the new drink price to?");
+        System.out.println("1. Mary Mullins\n2. McGettigan's\n3. Skeff\n4. Darcy's\n5. Barr an Chaladh\n" +
+                "6. Buskers\n7. Taaffes\n8. Blue Note\n9. Massimos\n10. Monroes\n11. Roisin Dubh\n12. Taylors");
+
+        int num = scanner.nextInt();
+
+        switch(num){
+            case 1:
+                System.out.println("Enter the drink price: ");
+                double price = scanner.nextDouble();
+                pubOverview.addDrinkPriceMM(price);
+                pubOverview.maryMullinsPD();
+                break;
+            case 2:
+
+                break;
+            case 3:
+
+                break;
+            case 4:
+
+                break;
+            case 5:
+
+                break;
+            case 6:
+
+                break;
+            case 7:
+
+                break;
+            case 8:
+
+                break;
+            case 9:
+
+                break;
+            case 10:
+
+                break;
+            case 11:
+
+                break;
+            case 12:
+
+                break;
+        }
+    }
+
     public static void reviewDarcys(){
         System.out.println("\nReviews:\n\n“Best pub in Galway”\n" +
                 "“Great bar, friendly staff and live music.”\n.\n" +
@@ -283,7 +357,7 @@ public class pubSelect {
                 "The staff were really friendly so we came back in later the same day and had a great Sunday " +
                 "night out!\n" +
                 "\n" +
-                "Date of visit: August 2023\n\n");
+
     }
 
     public static void reviewBarrNaCh(){
