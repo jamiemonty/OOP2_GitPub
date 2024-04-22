@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class pubSelect {
 
+ 
     private static double[] prices;
     public static String[] drinks;
+
     static public String[] eyreSqPub = {"1. Mary Mullins", "2. McGettigan's", "3. Skeff", "4. Darcy's"};
     static public String[] shopStPub = {"1. Barr an Chaladh", "2. Busker Brownes", "3. Taffees"};
     static public String[] latinQrPub = {"1. Blue Note", "2. Massimo's", "3. Monroe's", "4.Roisin Dubh", "5. Taylor's"};
@@ -299,12 +301,15 @@ public class pubSelect {
                 "Great bar, friendly staff and live music. Popped in on our way past for a quick drink. \n" +
                 "The staff were really friendly so we came back in later the same day and had a great Sunday " +
                 "night out!\n" +
+
                 "\n");
+
 
     }
 
     public static void reviewBarrNaCh(){
         System.out.println("\nReviews:\n\nBrilliant pub ,live music seven nights a week \n" +
+
                         "and owner Michael a gent and a character good upstairs \n" +
                         "in mama rich a lovely experience make sure to book\n" +
                         "Date of visit: February 2024\n.\n" +
@@ -315,6 +320,18 @@ public class pubSelect {
                         "Remembers all of our names. Remembers all of our orders.\n" +
                         " Just made our night! Give this guy a raise asap!\n" +
                         "Date of visit: August 2022\n\n");
+
+                "and owner Michael a gent and a character good upstairs \n" +
+                "in mama rich a lovely experience make sure to book\n" +
+                "Date of visit: February 2024\n.\n" +
+                "Great place for a night out or a drink before dinner. \n" +
+                "Was lucky to get the snug next to the bar last time and spent a few hours with friends.\n" +
+                "Date of visit: November 2023\n.\n" +
+                "Monty! Where can I start? The best bartender out there. \n" +
+                "Remembers all of our names. Remembers all of our orders.\n" +
+                " Just made our night! Give this guy a raise asap!\n" +
+                "Date of visit: August 2022\n\n");
+
     }
 
     public static void reviewBlueNote(){
@@ -473,6 +490,7 @@ public class pubSelect {
 
     public static void reviewMcGettigans(){
         System.out.println("\nReviews:\n\nHidden gem of Galway\n" +
+
                         "Walked in for a Guinness, found 2 seats at the bar. Nathan and Monisha welcomed us\n" +
                         "like family and were awesome! They gave the best recommendations.\n" +
                         "Date of visit: September 2023\n.\n" +
@@ -484,6 +502,19 @@ public class pubSelect {
                         "Absolutely fab!! Came here to watch a game and get some snacks and drinks and\n" +
                         "was delicious and the staff were lovely! Will definitely be coming here again!!!\n" +
                         "Date of visit: August 2023\n\n");
+
+                "Walked in for a Guinness, found 2 seats at the bar. Nathan and Monisha welcomed us\n" +
+                "like family and were awesome! They gave the best recommendations.\n" +
+                "Date of visit: September 2023\n.\n" +
+                "Great time\n" +
+                "Jack was great to talk to about local history and the rest of the young staff were\n" +
+                "friendly and very attentive. Highly recommend.\n" +
+                "Date of visit:  September 2023\n.\n" +
+                "Absolutely fabulous\n" +
+                "Absolutely fab!! Came here to watch a game and get some snacks and drinks and\n" +
+                "was delicious and the staff were lovely! Will definitely be coming here again!!!\n" +
+                "Date of visit: August 2023\n\n");
+
     }
 
 }

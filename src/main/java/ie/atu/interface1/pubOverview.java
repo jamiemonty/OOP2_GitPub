@@ -81,7 +81,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-
+            
                 pubSelect.reviewMcGettigans();
 
                 break;
@@ -238,6 +238,7 @@ public class pubOverview extends pubSelect {
                 System.out.println("-Score: " + average);
 
                 pubSelect.reviewBuskers();
+            
                 break;
 
             case 3:
@@ -314,7 +315,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-
+            
                 pubSelect.reviewMassimos();
 
                 break;
@@ -355,6 +356,7 @@ public class pubOverview extends pubSelect {
                 System.out.println("-Score: " + average);
 
                 pubSelect.reviewMonroes();
+            
                 break;
 
             case 3:
@@ -473,6 +475,7 @@ public class pubOverview extends pubSelect {
                 System.out.println("-Score: " + average);
 
                 pubSelect.reviewTaffes();
+            
                 break;
 
             case 3:
