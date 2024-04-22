@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class pubSelect {
 
-    private double[] prices;
+ 
+    private static double[] prices;
+    public static String[] drinks;
+
     static public String[] eyreSqPub = {"1. Mary Mullins", "2. McGettigan's", "3. Skeff", "4. Darcy's"};
     static public String[] shopStPub = {"1. Barr an Chaladh", "2. Busker Brownes", "3. Taffees"};
     static public String[] latinQrPub = {"1. Blue Note", "2. Massimo's", "3. Monroe's", "4.Roisin Dubh", "5. Taylor's"};
@@ -266,83 +269,25 @@ public class pubSelect {
                 } catch (Exception e) {
                     System.out.println("Invalid input. Please enter a valid name for the new pub.");
                 }
-                //displayPubsOther();, make this and populate it with the array. There is no other pubs only
-                // when a new pub is created in this area
+                addDrinkPrice(prices);
+
                 break;
 
         }
     }
 
-    public static void addDrink(){
+    public static void addDrinkPrice(double[] prices) {
         try {
-            Scanner newDrink = new Scanner(System.in);
-            System.out.println("Enter the name of the new drink: ");
-            String newDrinkName = newDrink.nextLine();
+            Scanner newPrice = new Scanner(System.in);
 
-            int index = drinks.length;
-
-            String[] updatedDrinks = new String[index + 1];
-
-            // Copy existing elements to the new array
-            for (int i = 0; i < drinks.length; i++) {
-                updatedDrinks[i] = drinks[i];
-            }
-
-            updatedDrinks[index] = newDrinkName;
-
-            drinks = updatedDrinks;
-
-            System.out.println("The new drink has been added successfully.");
-        } catch (Exception e) {
-            System.out.println("Invalid input. Please enter a valid name for the new pub.");
-        }
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("\nWhat pub would you like to add the new drink price to?");
-        System.out.println("1. Mary Mullins\n2. McGettigan's\n3. Skeff\n4. Darcy's\n5. Barr an Chaladh\n" +
-                "6. Buskers\n7. Taaffes\n8. Blue Note\n9. Massimos\n10. Monroes\n11. Roisin Dubh\n12. Taylors");
-
-        int num = scanner.nextInt();
-
-        switch(num){
-            case 1:
-                System.out.println("Enter the drink price: ");
-                double price = scanner.nextDouble();
-                pubOverview.addDrinkPriceMM(price);
-                pubOverview.maryMullinsPD();
-                break;
-            case 2:
-
-                break;
-            case 3:
-
-                break;
-            case 4:
-
-                break;
-            case 5:
-
-                break;
-            case 6:
-
-                break;
-            case 7:
-
-                break;
-            case 8:
-
-                break;
-            case 9:
-
-                break;
-            case 10:
-
-                break;
-            case 11:
-
-                break;
-            case 12:
-
-                break;
+             for (int i = 0; i <= drinks.length; i++) {
+                 if (prices[i] == 0)
+                     System.out.println("\nEnter the price of " + drinks[i]);
+                 double price = newPrice.nextDouble();
+             }
+             }
+        catch(Exception e){
+            System.out.println("\nDrink prices added.");
         }
     }
 
@@ -356,12 +301,26 @@ public class pubSelect {
                 "Great bar, friendly staff and live music. Popped in on our way past for a quick drink. \n" +
                 "The staff were really friendly so we came back in later the same day and had a great Sunday " +
                 "night out!\n" +
-                "\n" +
+
+                "\n");
+
 
     }
 
     public static void reviewBarrNaCh(){
         System.out.println("\nReviews:\n\nBrilliant pub ,live music seven nights a week \n" +
+
+                        "and owner Michael a gent and a character good upstairs \n" +
+                        "in mama rich a lovely experience make sure to book\n" +
+                        "Date of visit: February 2024\n.\n" +
+                        "Great place for a night out or a drink before dinner. \n" +
+                        "Was lucky to get the snug next to the bar last time and spent a few hours with friends.\n" +
+                        "Date of visit: November 2023\n.\n" +
+                        "Monty! Where can I start? The best bartender out there. \n" +
+                        "Remembers all of our names. Remembers all of our orders.\n" +
+                        " Just made our night! Give this guy a raise asap!\n" +
+                        "Date of visit: August 2022\n\n");
+
                 "and owner Michael a gent and a character good upstairs \n" +
                 "in mama rich a lovely experience make sure to book\n" +
                 "Date of visit: February 2024\n.\n" +
@@ -372,6 +331,7 @@ public class pubSelect {
                 "Remembers all of our names. Remembers all of our orders.\n" +
                 " Just made our night! Give this guy a raise asap!\n" +
                 "Date of visit: August 2022\n\n");
+
     }
 
     public static void reviewBlueNote(){
@@ -530,6 +490,19 @@ public class pubSelect {
 
     public static void reviewMcGettigans(){
         System.out.println("\nReviews:\n\nHidden gem of Galway\n" +
+
+                        "Walked in for a Guinness, found 2 seats at the bar. Nathan and Monisha welcomed us\n" +
+                        "like family and were awesome! They gave the best recommendations.\n" +
+                        "Date of visit: September 2023\n.\n" +
+                        "Great time\n" +
+                        "Jack was great to talk to about local history and the rest of the young staff were\n" +
+                        "friendly and very attentive. Highly recommend.\n" +
+                        "Date of visit:  September 2023\n.\n" +
+                        "Absolutely fabulous\n" +
+                        "Absolutely fab!! Came here to watch a game and get some snacks and drinks and\n" +
+                        "was delicious and the staff were lovely! Will definitely be coming here again!!!\n" +
+                        "Date of visit: August 2023\n\n");
+
                 "Walked in for a Guinness, found 2 seats at the bar. Nathan and Monisha welcomed us\n" +
                 "like family and were awesome! They gave the best recommendations.\n" +
                 "Date of visit: September 2023\n.\n" +
@@ -541,6 +514,7 @@ public class pubSelect {
                 "Absolutely fab!! Came here to watch a game and get some snacks and drinks and\n" +
                 "was delicious and the staff were lovely! Will definitely be coming here again!!!\n" +
                 "Date of visit: August 2023\n\n");
+
     }
 
 }
