@@ -151,6 +151,13 @@ public class pubSelect {
                         "with a long history, dating back to the early 19th Century.");
                 pubOverview.taylorsPD();
                 break;
+            case 6:
+                System.out.println("You have chosen " + eyreSqPub[6]);
+                System.out.println("Drink Menu + Prices\n_____________________ ");
+                for (int i = 0; i < drinks.length; i++) {
+                    System.out.println(drinks[i] + "- €" + prices[i]);
+                }
+
             default:
                 System.out.println("Invalid choice.");
         }
@@ -183,10 +190,13 @@ public class pubSelect {
                     eyreSqPub = updatedEyreSqPub;
 
                     System.out.println("The new Pub has been listed");
+
+                    addDrinkPrice(prices);
+
                 } catch (Exception e) {
                     System.out.println("Invalid input. Please enter a valid name for the new pub.");
                 }
-                displayPubsEyreSq();
+
                 break;
 
             case 2:
@@ -211,10 +221,12 @@ public class pubSelect {
                     shopStPub = updatedShopStPub;
 
                     System.out.println("The new Pub has been listed");
+
+
                 } catch (Exception e) {
                     System.out.println("Invalid input. Please enter a valid name for the new pub.");
                 }
-                displayPubsShopSt();
+
                 break;
             case 3:
                 System.out.println("You selected the Latin Quarter.\n");
@@ -241,7 +253,7 @@ public class pubSelect {
                 } catch (Exception e) {
                     System.out.println("Invalid input. Please enter a valid name for the new pub.");
                 }
-                displayPubsLatinQ();
+
                 break;
             case 4:
                 System.out.println("You selected Other.\n");
@@ -269,7 +281,6 @@ public class pubSelect {
                 } catch (Exception e) {
                     System.out.println("Invalid input. Please enter a valid name for the new pub.");
                 }
-                addDrinkPrice(prices);
 
                 break;
 
@@ -278,17 +289,23 @@ public class pubSelect {
 
     public static void addDrinkPrice(double[] prices) {
         try {
-            Scanner newPrice = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
+            double[] pubPrices = new double[drinks.length];
 
-             for (int i = 0; i <= drinks.length; i++) {
-                 if (prices[i] == 0)
-                     System.out.println("\nEnter the price of " + drinks[i]);
-                 double price = newPrice.nextDouble();
-             }
+            System.out.println("Enter the prices for drinks at the new pub:");
+            for (int i = 0; i < drinks.length; i++) {
+                System.out.print("Price of " + drinks[i] + ": €");
+                pubPrices[i] = scanner.nextDouble();
+                updatePrices(eyreSqPub, pubPrices);
+            }
+            updatePrices(eyreSqPub, pubPrices);
              }
         catch(Exception e){
-            System.out.println("\nDrink prices added.");
+
         }
+    }
+    private static void updatePrices(String[] eyreSqPub, double[] prices){
+
     }
 
     public static void reviewDarcys(){
@@ -320,17 +337,6 @@ public class pubSelect {
                         "Remembers all of our names. Remembers all of our orders.\n" +
                         " Just made our night! Give this guy a raise asap!\n" +
                         "Date of visit: August 2022\n\n");
-
-                "and owner Michael a gent and a character good upstairs \n" +
-                "in mama rich a lovely experience make sure to book\n" +
-                "Date of visit: February 2024\n.\n" +
-                "Great place for a night out or a drink before dinner. \n" +
-                "Was lucky to get the snug next to the bar last time and spent a few hours with friends.\n" +
-                "Date of visit: November 2023\n.\n" +
-                "Monty! Where can I start? The best bartender out there. \n" +
-                "Remembers all of our names. Remembers all of our orders.\n" +
-                " Just made our night! Give this guy a raise asap!\n" +
-                "Date of visit: August 2022\n\n");
 
     }
 
@@ -502,19 +508,6 @@ public class pubSelect {
                         "Absolutely fab!! Came here to watch a game and get some snacks and drinks and\n" +
                         "was delicious and the staff were lovely! Will definitely be coming here again!!!\n" +
                         "Date of visit: August 2023\n\n");
-
-                "Walked in for a Guinness, found 2 seats at the bar. Nathan and Monisha welcomed us\n" +
-                "like family and were awesome! They gave the best recommendations.\n" +
-                "Date of visit: September 2023\n.\n" +
-                "Great time\n" +
-                "Jack was great to talk to about local history and the rest of the young staff were\n" +
-                "friendly and very attentive. Highly recommend.\n" +
-                "Date of visit:  September 2023\n.\n" +
-                "Absolutely fabulous\n" +
-                "Absolutely fab!! Came here to watch a game and get some snacks and drinks and\n" +
-                "was delicious and the staff were lovely! Will definitely be coming here again!!!\n" +
-                "Date of visit: August 2023\n\n");
-
     }
 
 }

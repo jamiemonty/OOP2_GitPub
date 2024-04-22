@@ -19,8 +19,8 @@ public class Admin implements UserAuthenticator{
         String enteredPassword = scanner.nextLine();
 
         if (admin.authenticate(enteredUsername, enteredPassword)) {
-            System.out.println("\nPublican authentication successful!\n\nWhat  would you wish to update/add:");
-            System.out.println("\n1. Add pub\t 2. Delete Pub/Drink\nCommand: ");
+            System.out.println("\nPublican authentication successful!\n\nWhat would you wish to update/add:");
+            System.out.println("\n1. Add pub/drink\t 2. Delete Pub/Drink\nCommand: ");
 
             int command = scanner.nextInt();
 
