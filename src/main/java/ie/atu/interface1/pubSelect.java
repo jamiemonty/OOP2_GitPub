@@ -321,7 +321,7 @@ public class pubSelect {
                         " Just made our night! Give this guy a raise asap!\n" +
                         "Date of visit: August 2022\n\n");
 
-                "and owner Michael a gent and a character good upstairs \n" +
+          /*      "and owner Michael a gent and a character good upstairs \n" +
                 "in mama rich a lovely experience make sure to book\n" +
                 "Date of visit: February 2024\n.\n" +
                 "Great place for a night out or a drink before dinner. \n" +
@@ -330,7 +330,7 @@ public class pubSelect {
                 "Monty! Where can I start? The best bartender out there. \n" +
                 "Remembers all of our names. Remembers all of our orders.\n" +
                 " Just made our night! Give this guy a raise asap!\n" +
-                "Date of visit: August 2022\n\n");
+                "Date of visit: August 2022\n\n"); */
 
     }
 
@@ -503,7 +503,7 @@ public class pubSelect {
                         "was delicious and the staff were lovely! Will definitely be coming here again!!!\n" +
                         "Date of visit: August 2023\n\n");
 
-                "Walked in for a Guinness, found 2 seats at the bar. Nathan and Monisha welcomed us\n" +
+      /*          "Walked in for a Guinness, found 2 seats at the bar. Nathan and Monisha welcomed us\n" +
                 "like family and were awesome! They gave the best recommendations.\n" +
                 "Date of visit: September 2023\n.\n" +
                 "Great time\n" +
@@ -513,7 +513,7 @@ public class pubSelect {
                 "Absolutely fabulous\n" +
                 "Absolutely fab!! Came here to watch a game and get some snacks and drinks and\n" +
                 "was delicious and the staff were lovely! Will definitely be coming here again!!!\n" +
-                "Date of visit: August 2023\n\n");
+                "Date of visit: August 2023\n\n"); */
 
     }
 
