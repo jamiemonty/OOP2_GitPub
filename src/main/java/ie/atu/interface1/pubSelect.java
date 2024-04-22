@@ -7,8 +7,8 @@ public class pubSelect {
  
     private static double[] prices;
     public static String[] drinks;
-
-    static public String[] eyreSqPub = {"1. Mary Mullins", "2. McGettigan's", "3. Skeff", "4. Darcy's"};
+    public static double[] newPriceEyre = {};
+    static public String[] eyreSqPub = {"1. Mary Mullins", "2. McGettigan's", "3. Skeff", "4. Darcy's", ""};
     static public String[] shopStPub = {"1. Barr an Chaladh", "2. Busker Brownes", "3. Taffees"};
     static public String[] latinQrPub = {"1. Blue Note", "2. Massimo's", "3. Monroe's", "4.Roisin Dubh", "5. Taylor's"};
     static public String[] otherPub = {""};
@@ -70,6 +70,9 @@ public class pubSelect {
                         "Eyre Square in the heart of Galway city, just beside the train station");
                 pubOverview.darcysPD();
                 break;
+
+            case 5:
+                System.out.println("You have chosen " + eyreSqPub[5]);
             default:
                 System.out.println("Invalid choice.");
         }
@@ -180,7 +183,6 @@ public class pubSelect {
 
                     String[] updatedEyreSqPub = new String[eyreSqPub.length + 1];
 
-                    // Copy existing elements to the new array
                     for (int i = 0; i < eyreSqPub.length; i++) {
                         updatedEyreSqPub[i] = eyreSqPub[i];
                     }
@@ -189,9 +191,11 @@ public class pubSelect {
 
                     eyreSqPub = updatedEyreSqPub;
 
-                    System.out.println("The new Pub has been listed");
+                    System.out.println("The new Pub has been added");
 
-                    addDrinkPrice(prices);
+                    addDrinkPrices();
+
+                    displayPubsEyreSq();
 
                 } catch (Exception e) {
                     System.out.println("Invalid input. Please enter a valid name for the new pub.");
@@ -216,6 +220,7 @@ public class pubSelect {
 
                     // Add the new pub name to the end of the new array
                     updatedShopStPub[shopStPub.length] = newPubName;
+
 
                     // put back into the old array
                     shopStPub = updatedShopStPub;
@@ -287,25 +292,24 @@ public class pubSelect {
         }
     }
 
-    public static void addDrinkPrice(double[] prices) {
+    public static void addDrinkPrices() {
         try {
             Scanner scanner = new Scanner(System.in);
-            double[] pubPrices = new double[drinks.length];
+            newPriceEyre = new double[drinks.length];
 
             System.out.println("Enter the prices for drinks at the new pub:");
             for (int i = 0; i < drinks.length; i++) {
                 System.out.print("Price of " + drinks[i] + ": €");
-                pubPrices[i] = scanner.nextDouble();
-                updatePrices(eyreSqPub, pubPrices);
+                newPriceEyre[i] = scanner.nextDouble();
             }
-            updatePrices(eyreSqPub, pubPrices);
+            System.out.println("Entered prices:");
+            for (int i = 0; i < drinks.length; i++) {
+                System.out.println(drinks[i] + ": " + newPriceEyre[i]);
+            }
              }
         catch(Exception e){
-
+            System.out.println("Failed to add prices.");
         }
-    }
-    private static void updatePrices(String[] eyreSqPub, double[] prices){
-
     }
 
     public static void reviewDarcys(){
