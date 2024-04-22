@@ -5,9 +5,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.printf("\n\nHello and welcome to GitPub!\n\nPlease enter 1 if you're a Customer or 2 if you're a Publican: ");
-        int choice = scanner.nextInt();
-        while(true){
+
+        while (true) {
+            System.out.printf("\n\nHello and welcome to GitPub!\n\nPlease enter 1 if you're a Customer or 2 if you're a Publican: ");
+            int choice = scanner.nextInt();
+
             switch (choice) {
                 case 1:
                     System.out.println("\nPlease select what area you would like to visit\n");
@@ -16,9 +18,9 @@ public class Main {
                     switch (area) {
                         case 1:
                             System.out.println("\nEyre Square's Pubs\n");
-                            //calls for pubSelect then populates the page with the pubs, the user then enters what pub they'd like
+                            // Calls for pubSelect then populates the page with the pubs, the user then enters what pub they'd like
                             pubOverview.displayPubsEyreSq();
-                            //then the pub prices for drinks is shown along with a review.
+                            // Then the pub prices for drinks are shown along with a review.
 
                             break;
                         case 2:
@@ -37,13 +39,20 @@ public class Main {
                             break;
                     }
                     break;
-                case 2://Prompts the user for a username and password, then asked to select what command they want to complete.
+                case 2: // Prompts the user for a username and password, then asked to select what command they want to complete.
                     Admin.authenticate();
                     break;
                 default:
                     System.out.println("Invalid choice.");
                     break;
+            }
 
+            // After completing admin functionality, ask if the user wants to continue or exit
+            System.out.println("Do you want to continue? (yes/no)");
+            String continueChoice = scanner.next();
+            if (!continueChoice.equalsIgnoreCase("yes")) {
+                System.out.println("Goodbye!");
+                break; // Exit the loop and end the program
             }
         }
     }
