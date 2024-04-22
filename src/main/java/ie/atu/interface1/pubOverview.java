@@ -4,6 +4,20 @@ import java.util.Scanner;
 
 public class pubOverview extends pubSelect {
 
+    static double[] MMprices = {5.70, 6.70, 6.30, 6.50, 6.80, 4.50, 6.00, 1.00, 3.00, 2.50, 5.50, 5.50, 6.00, 6.20, 11.50, 13.00, 13.60, 13.00, 11.90};
+    static double[] mcG_prices = {5.40, 5.80, 5.80, 5.20, 5.50, 4.70, 5.00, 0.50, 3.00, 2.50, 5.80, 5.80, 5.20, 5.30, 12.00, 12.50, 12.50, 12.50, 12.50};
+    static double[] sK_prices = {5.20, 6.00, 6.40, 6.00, 6.00, 5.70, 6.00, 1.00, 3.40, 2.40, 5.80, 5.60, 5.60, 5.60, 14.00, 10.00, 12.50, 13.50, 11 };
+    static double[] dar_prices = {5.50, 6.00, 6.20, 6.00, 6.00, 6.00, 6.00, 1.50, 2.80, 2.40, 6.00, 6.00, 6.00, 6.50, 0, 0, 0, 0, 0 };
+    static double[] barrNa_prices = {5.50, 6.00, 6.20, 6.00, 6.00, 6.00, 6.00, 1.50, 2.80, 2.40, 6.00, 6.00, 6.00, 6.50, 0, 0, 0, 0, 0 };
+    static double[] bus_prices = {5.95, 6.50, 6.50, 6.00, 6.00, 6.00, 6.00, 1.25, 3.00, 2.40, 6.00, 6.00, 6.00, 6.00, 12.50, 12.00, 12.50, 12.50, 12.00};
+    static double[] blueN_prices = {5.80, 6.40, 6.50, 6.20, 6.20, 6.20, 6.20, 1.00, 3.00, 2.80, 6.20, 6.20, 6.20, 6.20, 12.50, 12.50, 12.00, 12.00, 12.75};
+    static double[] massimosPrices = {5.20, 5.90, 6.20, 6.00, 6.00, 6.00, 6.00, 1.20, 3.00, 2.20, 5.70, 5.70, 5.70, 5.70, 13.00, 13.00, 0, 12.50, 12.50};
+    static double[] monroesPrices = {5.20, 6.50, 6.80, 6.50, 7.00, 5.50, 5.50, 1.20, 2.80, 2.30, 4.80, 5.00, 5.10, 5.40, 11.90, 13.80, 12.00, 12.80, 12.30};
+    static double[] roisinPrices = {5.50, 6.60, 6.60, 6.00, 6.30, 5.40, 4.50, 0.50, 3.20, 2.90, 5.80, 6.00, 5.50, 5.50, 12.50, 12.90, 13.00, 14.20, 13.00};
+    static double[] taaffesPrices = {5.40, 6.20, 5.80, 6.00, 4.50, 6.00, 6.30, 1.00, 2.80, 2.50, 6.00, 5.60, 5.70, 5.40, 12.00, 13.00, 12.80, 13.20, 13.00};
+    static double[] taylorsPrices = {5.60, 6.00, 6.50, 6.20, 6.00, 5.80, 5.00, 0, 2.40, 2.60, 6.00, 6.00, 6.00, 0, 15.00, 12.00, 12.50, 12.00, 12.00};
+
+
     public pubOverview(/*String[] drinks,*/ double[] prices, String[] reviewCat, double[] rating) {
         super(prices);
         this.reviewCat = reviewCat;
@@ -28,10 +42,10 @@ public class pubOverview extends pubSelect {
             case 1:
                 System.out.println("Pub Prices\n");
 
-                double[] prices = {5.70, 6.70, 6.30, 6.50, 6.80, 4.50, 6.00, 1.00, 3.00, 2.50, 5.50, 5.50, 6.00, 6.20, 11.50, 13.00, 13.60, 13.00, 11.90};
+                pubSelect pub= new pubSelect(MMprices);
 
-                pubSelect pub= new pubSelect(prices);
                 pub.displayinfo();
+
                 break;
             case 2:
                 System.out.println("Pub Reviews\n");
@@ -66,9 +80,9 @@ public class pubOverview extends pubSelect {
         switch (select) {
             case 1:
                 System.out.println("Pub Prices\n");
-                double[] prices = {5.40, 5.80, 5.80, 5.20, 5.50, 4.70, 5.00, 0.50, 3.00, 2.50, 5.80, 5.80, 5.20, 5.30, 12.00, 12.50, 12.50, 12.50, 12.50};
 
-                pubSelect pub= new pubSelect(prices);
+                pubSelect pub= new pubSelect(mcG_prices);
+
                 pub.displayinfo();
                 break;
             case 2:
@@ -104,9 +118,9 @@ public class pubOverview extends pubSelect {
         switch (select) {
             case 1:
                 System.out.println("Pub Prices\n");
-                double[] prices = {5.20, 6.00, 6.40, 6.00, 6.00, 5.70, 6.00, 1.00, 3.40, 2.40, 5.80, 5.60, 5.60, 5.60, 14.00, 10.00, 12.50, 13.50, 11 };
 
-                pubSelect pub= new pubSelect(prices);
+                pubSelect pub= new pubSelect(sK_prices);
+
                 pub.displayinfo();
                 break;
             case 2:
@@ -143,9 +157,9 @@ public class pubOverview extends pubSelect {
         switch (select) {
             case 1:
                 System.out.println("Pub Prices\n");
-                double[] prices = {5.50, 6.00, 6.20, 6.00, 6.00, 6.00, 6.00, 1.50, 2.80, 2.40, 6.00, 6.00, 6.00, 6.50, 0, 0, 0, 0, 0 };
 
-                pubSelect pub= new pubSelect(prices);
+                pubSelect pub= new pubSelect(dar_prices);
+
                 pub.displayinfo();
                 break;
             case 2:
@@ -182,9 +196,9 @@ public class pubOverview extends pubSelect {
         switch (select) {
             case 1:
                 System.out.println("Pub Prices\n");
-                double[] prices = {5.50, 6.00, 6.20, 6.00, 6.00, 6.00, 6.00, 1.50, 2.80, 2.40, 6.00, 6.00, 6.00, 6.50, 0, 0, 0, 0, 0 };
 
-                pubSelect pub= new pubSelect(prices);
+                pubSelect pub= new pubSelect(barrNa_prices);
+
                 pub.displayinfo();
                 break;
             case 2:
@@ -221,9 +235,9 @@ public class pubOverview extends pubSelect {
         switch (select) {
             case 1:
                 System.out.println("Pub Prices\n");
-                double[] prices = {5.95, 6.50, 6.50, 6.00, 6.00, 6.00, 6.00, 1.25, 3.00, 2.40, 6.00, 6.00, 6.00, 6.00, 12.50, 12.00, 12.50, 12.50, 12.00};
 
-                pubSelect pub= new pubSelect(prices);
+                pubSelect pub= new pubSelect(bus_prices);
+
                 pub.displayinfo();
                 break;
             case 2:
@@ -261,9 +275,9 @@ public class pubOverview extends pubSelect {
         switch (select) {
             case 1:
                 System.out.println("Pub Prices\n");
-                double[] prices = {5.80, 6.40, 6.50, 6.20, 6.20, 6.20, 6.20, 1.00, 3.00, 2.80, 6.20, 6.20, 6.20, 6.20, 12.50, 12.50, 12.00, 12.00, 12.75};
 
-                pubSelect pub= new pubSelect(prices);
+                pubSelect pub= new pubSelect(blueN_prices);
+
                 pub.displayinfo();
                 break;
             case 2:
@@ -300,9 +314,9 @@ public class pubOverview extends pubSelect {
         switch (select) {
             case 1:
                 System.out.println("Pub Prices\n");
-                double[] prices = {5.20, 5.90, 6.20, 6.00, 6.00, 6.00, 6.00, 1.20, 3.00, 2.20, 5.70, 5.70, 5.70, 5.70, 13.00, 13.00, 0, 12.50, 12.50};
 
-                pubSelect pub= new pubSelect(prices);
+                pubSelect pub= new pubSelect(massimosPrices);
+
                 pub.displayinfo();
                 break;
             case 2:
@@ -339,9 +353,8 @@ public class pubOverview extends pubSelect {
         switch (select) {
             case 1:
                 System.out.println("Pub Prices\n");
-                double[] prices = {5.20, 6.50, 6.80, 6.50, 7.00, 5.50, 5.50, 1.20, 2.80, 2.30, 4.80, 5.00, 5.10, 5.40, 11.90, 13.80, 12.00, 12.80, 12.30};
 
-                pubSelect pub= new pubSelect(prices);
+                pubSelect pub= new pubSelect(monroesPrices);
                 pub.displayinfo();
                 break;
             case 2:
@@ -378,9 +391,8 @@ public class pubOverview extends pubSelect {
         switch (select) {
             case 1:
                 System.out.println("Pub Prices\n");
-                double[] prices = {5.50, 6.60, 6.60, 6.00, 6.30, 5.40, 4.50, 0.50, 3.20, 2.90, 5.80, 6.00, 5.50, 5.50, 12.50, 12.90, 13.00, 14.20, 13.00};
 
-                pubSelect pub= new pubSelect(prices);
+                pubSelect pub= new pubSelect(roisinPrices);
                 pub.displayinfo();
                 break;
             case 2:
@@ -418,9 +430,9 @@ public class pubOverview extends pubSelect {
         switch (select) {
             case 1:
                 System.out.println("Pub Prices\n");
-                double[] prices = {5.60, 6.00, 6.50, 6.20, 6.00, 5.80, 5.00, 0, 2.40, 2.60, 6.00, 6.00, 6.00, 0, 15.00, 12.00, 12.50, 12.00, 12.00};
 
-                pubSelect pub= new pubSelect(prices);
+                pubSelect pub= new pubSelect(taylorsPrices);
+
                 pub.displayinfo();
                 break;
             case 2:
@@ -458,9 +470,9 @@ public class pubOverview extends pubSelect {
         switch (select) {
             case 1:
                 System.out.println("Pub Prices\n");
-                double[] prices = {5.40, 6.20, 5.80, 6.00, 4.50, 6.00, 6.30, 1.00, 2.80, 2.50, 6.00, 5.60, 5.70, 5.40, 12.00, 13.00, 12.80, 13.20, 13.00};
 
-                pubSelect pub= new pubSelect(prices);
+                pubSelect pub= new pubSelect(taaffesPrices);
+
                 pub.displayinfo();
                 break;
             case 2:
