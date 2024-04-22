@@ -337,7 +337,6 @@ public class pubSelect {
                         "Remembers all of our names. Remembers all of our orders.\n" +
                         " Just made our night! Give this guy a raise asap!\n" +
                         "Date of visit: August 2022\n\n");
-
     }
 
     public static void reviewBlueNote(){
@@ -508,6 +507,7 @@ public class pubSelect {
                         "Absolutely fab!! Came here to watch a game and get some snacks and drinks and\n" +
                         "was delicious and the staff were lovely! Will definitely be coming here again!!!\n" +
                         "Date of visit: August 2023\n\n");
+
     }
 
 }

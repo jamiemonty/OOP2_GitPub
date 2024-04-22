@@ -6,7 +6,7 @@ public class InsertPrice {
     public static void main(String[] args) throws SQLException {
 
         // Connect to the database
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/GitPubDatabase", "root", "password");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/gitpub_schema", "root", "password");
 
         try {
 

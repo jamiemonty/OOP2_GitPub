@@ -1,13 +1,13 @@
 package ie.atu.pool;
 
 import java.sql.*;
-
+import java.util.Scanner;
 public class InsertPub {
 
     public static void main(String[] args) throws SQLException {
 
         // Connect to the database
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/GitPubDatabase", "root", "password");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/gitpub_schema", "root", "password");
 
         try {
 
