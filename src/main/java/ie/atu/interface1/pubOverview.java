@@ -4,15 +4,10 @@ import java.util.Scanner;
 
 public class pubOverview extends pubSelect {
 
-    public static double[] maryMullinsPrices = {5.70, 6.70, 6.30, 6.50, 6.80, 4.50, 6.00, 1.00, 3.00, 2.50, 5.50, 5.50, 6.00, 6.20, 11.50, 13.00, 13.60, 13.00, 11.90};
     public pubOverview(/*String[] drinks,*/ double[] prices, String[] reviewCat, double[] rating) {
         super(prices);
         this.reviewCat = reviewCat;
         this.rating = rating;
-    }
-
-    public void displaydrinkinfo() {
-        displayinfo();
     }
 
     public static double calcAverage(double[] rating) {
@@ -48,8 +43,7 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+                pubSelect.reviewMaryMullins();
                 break;
 
             case 3:
@@ -87,8 +81,9 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+
+                pubSelect.reviewMcGettigans();
+
                 break;
 
             case 3:
@@ -124,8 +119,9 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewDarcys();
+
+                pubSelect.reviewSkeff();
+
                 break;
 
             case 3:
@@ -162,8 +158,9 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewDarcys();
+
+                pubSelect.reviewDarcys();
+
                 break;
 
             case 3:
@@ -200,8 +197,9 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewDarcys();
+
+                pubSelect.reviewBarrNaCh();
+
                 break;
 
             case 3:
@@ -238,8 +236,8 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+
+                pubSelect.reviewBuskers();
                 break;
 
             case 3:
@@ -277,8 +275,9 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+
+                pubSelect.reviewBlueNote();
+
                 break;
 
             case 3:
@@ -315,8 +314,9 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+
+                pubSelect.reviewMassimos();
+
                 break;
 
             case 3:
@@ -353,8 +353,8 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+
+                pubSelect.reviewMonroes();
                 break;
 
             case 3:
@@ -391,8 +391,9 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+
+                pubSelect.reviewRoisinDubh();
+
                 break;
 
             case 3:
@@ -430,8 +431,9 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+
+                pubSelect.reviewTaylors();
+
                 break;
 
             case 3:
@@ -469,8 +471,8 @@ public class pubOverview extends pubSelect {
                     System.out.println(reviewCat[i] + ": " + rating[i] + "/10.");
                 }
                 System.out.println("-Score: " + average);
-                //pubSelect review1 = new pubSelect(".");
-                //review1.reviewMaryMullins();
+
+                pubSelect.reviewTaffes();
                 break;
 
             case 3:
@@ -483,24 +485,5 @@ public class pubOverview extends pubSelect {
         }
     }
 
-    public static void addDrinkPriceMM(double newPrice) {
-        int newSize = maryMullinsPrices.length + 1;
-
-        // Create a new array with the updated size
-        double[] updatedPrices = new double[newSize];
-
-        // Copy the elements from the original array to the new array
-        for (int i = 0; i < maryMullinsPrices.length; i++) {
-            updatedPrices[i] = maryMullinsPrices[i];
-        }
-
-        // Add the new double value to the end of the new array
-        updatedPrices[newSize - 1] = newPrice;
-
-        // Update the reference to the new array
-        maryMullinsPrices = updatedPrices;
-
-        System.out.println("New price added successfully: " + newPrice);
-    }
 }
 

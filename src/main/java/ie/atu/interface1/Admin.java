@@ -20,29 +20,26 @@ public class Admin implements UserAuthenticator{
 
         if (admin.authenticate(enteredUsername, enteredPassword)) {
             System.out.println("\nPublican authentication successful!\n\nWhat  would you wish to update/add:");
-            System.out.println("\n1. Add pub\t 2. Add drink\t 3. Delete Pub/Drink\nCommand: ");
+            System.out.println("\n1. Add pub\t 2. Delete Pub/Drink\nCommand: ");
+
             int command = scanner.nextInt();
 
             scanner.nextLine();
 
             switch(command){
                 case 1:
-                    //System.out.println("Enter the name of the new pub: ");
-                    //String newPub = scanner.nextLine();
-                    //Add a new pub into the arrayList
                     pubSelect.addPub();
-                    //System.out.println("\nPub added.");
-                    break;
-                case 2:
-                    pubSelect.addDrink();
 
                     break;
-                case 3:
+
+                case 2:
                     System.out.println("What pub or drink do you want to erase: ");
                     String delete = scanner.nextLine();
-                    //pubMenu.remove(delete);
+
                     System.out.println("\nYou have removed " + delete + " from the list");
+
                     break;
+
                 default:
                     System.out.println("\nInvalid command.");
             }
