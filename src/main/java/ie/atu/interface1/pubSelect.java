@@ -119,12 +119,12 @@ public class pubSelect {
         Scanner scanner = new Scanner(System.in);
         //System.out.println("\n\nWelcome to the Pub Overview\n\n");
         System.out.println("Please enter the number which corresponds to the pub you would like to explore!\n");
-        String[] latinQrPub = {"1. Blue Note", "2. Massimo's", "3. Monroe's", "4.Roisin Dubh", "5. Taylor's"};
+        String[] latinQrPub = {"1. Blue Note", "2. Massimo's", "3. Monroe's", "4. Roisin Dubh", "5. Taylor's"};
         for(int x = 0; x < latinQrPub.length; x++){
             System.out.println(latinQrPub[x]);
         }
-        System.out.println("1. Blue Note\t\t2. Massimo's\n3. Monroe's\t\t4.Roisin Dubh\n5. Taylor's");
-        //System.out.println("1. Barr an Chaladh\t\t2. Blue Note\n3. Buskers\t\t\t\t4. Darcy's\n5. Mary Mullens\t\t\t6. Massimos\n7. McGettigan's\t\t\t8. Monroes\n9. Roisin Dubh\t\t\t10. Skeff\n11. Taaffes\t\t\t\t12. Taylor's ");
+        //System.out.println("1. Blue Note\t\t2. Massimo's\n3. Monroe's\t\t4.Roisin Dubh\n5. Taylor's");
+
         System.out.println("Pub number: ");
 
         int LatinQoverview = scanner.nextInt();
